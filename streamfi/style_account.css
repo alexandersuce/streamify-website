@@ -1,0 +1,35 @@
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: aliceblue;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+ p {
+    position: relative;
+    bottom: -60%;
+    left: -30%;
+ }
+h1 {
+    margin-bottom: 20px;
+}
+
+.account {
+    display: flex;
+    align-items: center;
+}
+
+.account-img,
+.account-icon {
+    width: 200px; /* Même taille pour l'image et l'icône */
+    height: 200px; /* Même taille pour l'image et l'icône */
+    margin-right: 20px; /* Espacement entre l'image et l'icône */
+}

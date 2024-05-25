@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Streamifi séries</title>
+    <link rel="icon" href="https://www.creativefabrica.com/wp-content/uploads/2021/04/07/Simple-S-modern-logo-design-Graphics-10500913-2-580x387.jpg">
+    <!-- Ajoutez la feuille de style Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <style>
+        /* Votre CSS reste inchangé */
+
+        body {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background-color: #000000;
+            color: #333;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            background-color: #333;
+            padding: 10px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #fef7f7;
+            flex: 1;
+        }
+
+        #discord-icon {
+            right: 1000000px;
+            margin-right: 10px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+
+        #discord-icon i {
+            font-size: 24px;
+            margin-right: 5px;
+        }
+
+        img {
+            max-width: 80%;
+            height: auto;
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            cursor: pointer;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+
+        div {
+            text-align: center;
+            flex: 0 0 calc(33.3333% - 20px);
+            background-color: #007BFF;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            transition: box-shadow 0.3s;
+        }
+
+        div:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        input[type="text"] {
+            padding: 8px;
+            margin: 10px;
+            border: 1px solid #000000;
+            border-radius: 4px;
+            width: 150px;
+            float: right;
+        }
+
+        
+        .rounded-pill {
+            border-radius: 50px !important;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="acceuille.html">
+            <h1>Streamify films</h1>
+        </a>
+        <input type="text" id="searchInput" onkeyup="search()" placeholder="Rechercher...">
+
+        <!-- Utilisez le bouton et le menu déroulant Bootstrap -->
+        <div class="dropdown">
+            <button class="btn btn-primary rounded-pill" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Genres</button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <div class="dropdown-scroll">
+                    <a class="dropdown-item" href="action.html">Action</a>
+                    <a class="dropdown-item" href="comédie.html">comédie</a>
+                    <!-- ... (ajoutez les autres genres) ... -->
+                </div>
+            </div>
+        </div>
+    </header>
+
+   
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+
+
+
+    <div>
+        <a href="https://site.wookafr.org/streaming/comedie/inseparables/">
+            <img src="https://fr.web.img6.acsta.net/pictures/19/07/30/09/20/1991246.jpg" alt="Wall-e">
+        </a>
+        <p>inséparables</p>
+    </div>
+   
+    <div>
+        <a href="https://wookafr.live/watch/2197">
+            <img src="https://fr.web.img6.acsta.net/medias/nmedia/18/62/92/90/18780031.jpg" alt="Wall-e">
+        </a>
+        <p>Les simpsons le film</p>
+    </div>
+   
+   
+
+    <div>
+        <a href="https://wookafr.live/watch/2779">
+            <img src="https://fr.web.img5.acsta.net/pictures/23/03/20/14/57/4979368.jpg" alt="Wall-e">
+        </a>
+        <p>Mario Bros le Film</p>
+    </div>
+
+
+
+<div>
+    <a href="baby boss.html">
+        <img src="https://www.cdbm.org/wp-content/uploads/2021/08/3566872.jpg" alt="Baby Boss">
+    </a>
+    <p>Film : Baby Boss</p>
+</div>
+<div>
+    <a href="quest ce qu'on as en core.html">
+        <img src="https://fr.web.img3.acsta.net/pictures/18/10/30/09/17/3442022.jpg" alt="Baby Boss">
+    </a>
+    <p>Film : qu'est ce qu'on a encore fait au bon dieu</p>
+</div>
+<div>
+    <a href="le nouveau jouet.html">
+        <img src="https://fr.web.img5.acsta.net/pictures/15/12/10/10/50/594663.jpg  " alt="Baby Boss">
+    </a>
+    <p>Film :Le nouveau </p>
+</div>
+<div>
+    <a href="3 jours max.html">
+        <img src="https://fr.web.img3.acsta.net/pictures/23/07/11/17/03/2741635.jpg" alt="3 jours max">
+    </a>
+    <p>Film : 3 jours max</p>
+</div>
+
+<div>
+    <a href="pouris gatées.html">
+        <img src="https://fr.web.img3.acsta.net/pictures/21/03/01/11/08/1963890.jpg" alt="Baby Boss">
+    </a>
+    <p>Film :pouris gatés</p>
+</div>
+
+    
+
+<div>
+    <a href="cosuorico.html">
+        <img src="https://fr.web.img6.acsta.net/pictures/23/11/27/11/08/3575019.jpg" alt="Cocoriquo">
+    </a>
+    <p>Film : Cocoriquo</p>
+</div>
+<div>
+    <a href="les segpas.html">
+        <img src="https://fr.web.img5.acsta.net/pictures/22/02/04/17/58/3314454.jpg" alt="Cocoriquo">
+    </a>
+    <p>Film : les segpas</p>
+</div>
+
+<div>
+    <a href="premier de la classe.html">
+        <img src="https://is1-ssl.mzstatic.com/image/thumb/Video124/v4/72/67/13/726713bf-ab73-695b-24c7-0374b0d2a9c8/BLX_D7_3319_backdrop_wide.png/1200x675mf.jpg" alt="Premier de la Classe">
+    </a>
+    <p>Film : Premier de la Classe.</p>
+</div>
+
+<script>
+    function search() {
+        var input, filter, divs, a, txtValue;
+        input = document.getElementById('searchInput');
+        filter = input.value.toUpperCase();
+        divs = document.getElementsByTagName('div');
+
+        for (var i = 0; i < divs.length; i++) {
+            a = divs[i].getElementsByTagName('a')[0];
+            txtValue = a.getAttribute('href');
+
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                divs[i].style.display = '';
+            } else {
+                divs[i].style.display = 'none';
+            }
+        }
+    }
+</script>
+</body>
+</html>

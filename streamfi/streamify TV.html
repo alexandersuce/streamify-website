@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://www.creativefabrica.com/wp-content/uploads/2021/04/07/Simple-S-modern-logo-design-Graphics-10500913-2-580x387.jpg">
+    <title>Streamify TV</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #000; /* Fond noir */
+            color: #fff; /* Texte blanc */
+            text-align: center;
+            margin: 50px;
+        }
+
+        h1 {
+            color: #ff0000; /* Couleur verte */
+        }
+
+        form {
+            background-color: #000000; /* Couleur de fond du formulaire */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            color: #fff; /* Couleur du texte du label */
+            font-size: 18px;
+            cursor: pointer; /* Rend le curseur interactif */
+        }
+
+        .emoji {
+            font-size: 24px;
+            margin-right: 5px;
+        }
+
+        input[type="radio"] {
+            display: none; /* Enlève les boutons radio */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Que souhaitez-vous regarder ?</h1>
+
+    <form>
+        <label for="option1" onclick="redirectToPage('https://www.ledirect.fr')">
+            <span class="emoji">&#128250;</span> Regarder la TV
+        </label>
+        <input type="radio" id="option1" name="options" value="Regarder la TV">
+        
+        <label for="option2" onclick="redirectToPage('sport.html')">
+            <span class="emoji">&#127936;</span> Regarder le sport
+        </label>
+        <input type="radio" id="option2" name="options" value="Regarder le sport">
+
+        <label for="option3" onclick="redirectToPage('acceuille.html')">
+            <span class="emoji">&#128526;</span> Autre
+        </label>
+        <input type="radio" id="option3" name="options" value="Autre">
+    </form>
+
+    <script>
+        function redirectToPage(url) {
+            window.location.href = url;
+        }
+    </script>
+
+</body>
+</html>

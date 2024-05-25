@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://www.creativefabrica.com/wp-content/uploads/2021/04/07/Simple-S-modern-logo-design-Graphics-10500913-2-580x387.jpg">
+    <title>Choix de film Dune</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1, p {
+            margin: 20px 0;
+        }
+
+        form {
+            display: inline-block;
+            background-color: #333;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        input[type="radio"] {
+            display: none; /* Hide the default radio buttons */
+        }
+
+        label {
+            display: inline-block;
+            padding: 20px;
+            margin: 20px;
+            background-color: #555;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        label img {
+            width: 200px; /* Ajustez la taille selon vos besoins */
+            height: auto;
+            display: block;
+            margin: 10px auto;
+            border-radius: 5px;
+        }
+
+        label:hover {
+            background-color: #0056b3;
+        }
+
+        #boutonAccueil {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        #boutonAccueil:hover {
+            background-color: #0056b3;
+        }
+       
+    </style>
+</head>
+<body>
+
+    <h1>Choisissez un film Dune</h1>
+
+    <p>Quel film Dune souhaitez-vous regarder? 🎥</p>
+
+    <form>
+        <input type="radio" id="dune1" name="choixFilm" value="Dune 1">
+        <label for="dune1" onclick="window.location.href='https://site.wookafr.org/streaming/aventure/dune-premiere-partie/';">
+            <img src="https://fr.web.img6.acsta.net/pictures/21/08/10/12/20/4633954.jpg" alt="Dune 1">
+            <br>
+            Dune 1
+        </label>
+        
+        <input type="radio" id="dune2" name="choixFilm" value="Dune 2">
+        <label for="dune2" onclick="window.location.href='https://site.wookafr.org/streaming/aventure/dune-deuxieme-partie/';">
+            <img src="https://img-4.linternaute.com/Kv7QC9VmlLm4spnfH9sot_uuKDE=/1240x/93cb9edceb264d3b99a542fbdc3375df/ccmcms-linternaute/215222.jpeg" alt="Dune 2">
+            <br>
+            Dune 2
+        </label>
+    </form>
+
+    <button id="boutonAccueil" onclick="window.location.href='acceuille.html';">🏠 Retour à l'accueil</button>
+    
+</body>
+</html>

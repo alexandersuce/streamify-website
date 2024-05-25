@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Streamifi séries</title>
+    <link rel="icon" href="https://www.creativefabrica.com/wp-content/uploads/2021/04/07/Simple-S-modern-logo-design-Graphics-10500913-2-580x387.jpg">
+    <!-- Ajoutez la feuille de style Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <style>
+        /* Votre CSS reste inchangé */
+
+        body {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background-color: #000000;
+            color: #333;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            background-color: #333;
+            padding: 10px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #fef7f7;
+            flex: 1;
+        }
+
+        #discord-icon {
+            right: 1000000px;
+            margin-right: 10px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+
+        #discord-icon i {
+            font-size: 24px;
+            margin-right: 5px;
+        }
+
+        img {
+            max-width: 80%;
+            height: auto;
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            cursor: pointer;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+
+        div {
+            text-align: center;
+            flex: 0 0 calc(33.3333% - 20px);
+            background-color: #007BFF;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            transition: box-shadow 0.3s;
+        }
+
+        div:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        input[type="text"] {
+            padding: 8px;
+            margin: 10px;
+            border: 1px solid #000000;
+            border-radius: 4px;
+            width: 150px;
+            float: right;
+        }
+
+        
+        .rounded-pill {
+            border-radius: 50px !important;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="acceuille.html">
+            <h1>Streamify films</h1>
+        </a>
+        <input type="text" id="searchInput" onkeyup="search()" placeholder="Rechercher...">
+
+        <!-- Utilisez le bouton et le menu déroulant Bootstrap -->
+        <div class="dropdown">
+            <button class="btn btn-primary rounded-pill" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Genres</button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <div class="dropdown-scroll">
+                    <a class="dropdown-item" href="action.html">Action</a>
+                    <a class="dropdown-item" href="comédie.html">comédie</a>
+                    <!-- ... (ajoutez les autres genres) ... -->
+                </div>
+            </div>
+        </div>
+    </header>
+
+   
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+
+
+
+    <div>
+        <a href="https://wookafr.live/watch/10030">
+            <img src="https://fr.web.img3.acsta.net/pictures/23/06/13/10/45/4427962.jpg" alt="Wall-e">
+        </a>
+        <p>En eau très trouble</p>
+    </div>
+    
+    <div>
+        <a href="spider.html">
+            <img src="https://lh5.googleusercontent.com/proxy/1q7SUly5CWDz647-Tx6vfSmlKioIoyXxHmnjn3Y9YJJuENCGFHWOjeSJKPUhwaMhGvan8KciklZwmbxINKAqAOEmDWInMNWc5kBQhnmWd37EwzxvRWS8VPKrZwrPdy3sIOOs5-As">
+        </a>
+        <p>Spider Man</p>
+    </div>
+    <div>
+        <a href="https://site.wookafr.org/streaming/science-fiction/en-eaux-troubles/">
+            <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/sKmxFCYGSync2zH94Aukzcp8yYA.jpg" alt="Wall-e">
+        </a>
+        <p>En eaux trouble</p>
+    </div>
+    <div>
+        <a href="https://site.wookafr.org/streaming/aventure/aquaman-et-le-royaume-perdu/">
+            <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/a70rdFN7SLTxAzEOf7M19R4W6q9.jpg">
+        </a>
+        <p>Aquaman</p>
+    </div>
+   
+   
+    <div>
+        <a href="https://wookafr.live/watch/1984">
+            <img src="https://m.media-amazon.com/images/I/8124Pstj51L._AC_UF1000,1000_QL80_.jpg" alt="Wall-e">
+        </a>
+        <p>Avatar : la voie de l'eau</p>
+    </div>
+
+  
+<div>
+    <a href="3 jours max.html">
+        <img src="https://fr.web.img3.acsta.net/pictures/23/07/11/17/03/2741635.jpg" alt="3 jours max">
+    </a>
+    <p>Film : 3 jours max</p>
+</div>
+
+<script>
+    function search() {
+        var input, filter, divs, a, txtValue;
+        input = document.getElementById('searchInput');
+        filter = input.value.toUpperCase();
+        divs = document.getElementsByTagName('div');
+
+        for (var i = 0; i < divs.length; i++) {
+            a = divs[i].getElementsByTagName('a')[0];
+            txtValue = a.getAttribute('href');
+
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                divs[i].style.display = '';
+            } else {
+                divs[i].style.display = 'none';
+            }
+        }
+    }
+</script>
+</body>
+</html>

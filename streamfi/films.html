@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Streamifi-Films</title>
+    <link rel="icon" href="https://www.creativefabrica.com/wp-content/uploads/2021/04/07/Simple-S-modern-logo-design-Graphics-10500913-2-580x387.jpg">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <style>
+        /* Votre CSS reste inchangé */
+
+        body {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background-color: #000000;
+            color: #333;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            background-color: #333;
+            padding: 10px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #fef7f7;
+            flex: 1;
+        }
+
+        #discord-icon {
+            right: 1000000px;
+            margin-right: 10px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+
+        #discord-icon i {
+            font-size: 24px;
+            margin-right: 5px;
+        }
+
+        img {
+            max-width: 80%;
+            height: auto;
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            cursor: pointer;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+
+        div {
+            text-align: center;
+            flex: 0 0 calc(33.3333% - 20px);
+            background-color: #007BFF;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            transition: box-shadow 0.3s;
+        }
+
+        div:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        input[type="text"] {
+            padding: 8px;
+            margin: 10px;
+            border: 1px solid #000000;
+            border-radius: 4px;
+            width: 150px;
+            float: right;
+        }
+
+        
+        .rounded-pill {
+            border-radius: 50px !important;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="acceuille.html">
+            <h1>Streamify films</h1>
+        </a>
+        <input type="text" id="searchInput" onkeyup="search()" placeholder="Rechercher...">
+
+        <!-- Utilisez le bouton et le menu déroulant Bootstrap -->
+        <div class="dropdown">
+            <button class="btn btn-primary rounded-pill" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Genres</button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <div class="dropdown-scroll">
+                    <a class="dropdown-item" href="action.html">Action</a>
+                    <a class="dropdown-item" href="comédie.html">comédie</a>
+                    <!-- ... (ajoutez les autres genres) ... -->
+                </div>
+            </div>
+        </div>
+    </header>
+
+   
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+<div>
+    <a href="https://www.tokyvideo.com/fr/video/le-parrain-vf">
+        <img src="https://fusion.molotov.tv/arts/i/446x588/Ch8SHQoUMnDPjiXNZwINrcvQ30-kZUjYI1ASA2pwZxgB/jpg" alt="Wall-e">
+    </a>
+    <p>Le parrain</p>
+</div>
+
+<div>
+    <a href="https://www.tokyvideo.com/fr/video/veuillez-nous-excuser-pour-la-gene-occasionnee-vf">
+        <img src="https://images.justwatch.com/poster/305939182/s718/veuillez-nous-excuser-pour-la-gene-occasionnee.jpg" alt="Wall-e">
+    </a>
+    <p>Veuillez nous excuser pour la gène occasionée</p>
+</div>
+
+<div>
+    <a href="baby sitting.html">
+        <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/3808DYuvuLQWutJPX2KwuB7sxnn.jpg" alt="Wall-e">
+    </a>
+    <p>Baby sitting</p>
+</div>
+<div>
+    <a href="https://www.justwatch.com/fr/serie/mh370-lavion-disparu">
+        <img src="https://images.justwatch.com/poster/303966091/s332/saison-1" alt="Wall-e">
+    </a>
+    <p>MH370 L'avion disparue</p>
+</div>
+
+<div>
+    <a href="https://films.wookafr.org/streaming/fantastique/elementaire/">
+        <img src="https://fr.web.img2.acsta.net/pictures/23/06/07/14/09/5709179.jpg" alt="Wall-e">
+    </a>
+    <p>Elemantaire</p>
+</div>
+<div>
+    <a href="https://films.wookafr.org/streaming/fantastique/le-sens-de-la-famille/">
+        <img src="https://fr.web.img6.acsta.net/pictures/21/03/26/10/00/0733728.jpg" alt="Wall-e">
+    </a>
+    <p>Le sens de la famille</p>
+</div>
+<div>
+    <a href="les croods.html">
+        <img src="https://fr.web.img4.acsta.net/medias/nmedia/18/95/10/55/20502139.jpg" alt="Wall-e">
+    </a>
+    <p>Les croods le film</p>
+</div>
+<div>
+    <a href="https://films.wookafr.org/streaming/drame/bob-marley-one-love/">
+        <img src="https://m.media-amazon.com/images/M/MV5BY2U4M2NmY2ItMjAyNC00NzM1LTg3ZTEtNzVlYjEzNTE5NDI5XkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_.jpg" alt="Wall-e">
+    </a>
+    <p>Bob marley one love</p>
+</div>
+
+<div>
+    <a href="https://films.wookafr.org/streaming/comedie/les-profs-2/">
+        <img src="https://fr.web.img6.acsta.net/pictures/15/06/01/14/20/400975.jpg">
+    </a>
+    <p>Les profs 2</p>
+</div>
+
+<div>
+    <a href="https://films.wookafr.org/streaming/comedie/super-heros-malgre-lui/">
+        <img src="https://fr.web.img6.acsta.net/pictures/22/01/19/10/17/1349046.jpg" alt="Wall-e">
+    </a>
+    <p>Super héro malgrès lui</p>
+</div>
+<div>
+    <a href="https://www.tokyvideo.com/fr/video/la-famille-belier-2014">
+        <img src="https://fr.web.img4.acsta.net/pictures/14/11/28/13/05/237211.jpg">
+    </a>
+    <p>La famille belier</p>
+</div>
+<div>
+    <a href="spider.html">
+        <img src="https://lh5.googleusercontent.com/proxy/1q7SUly5CWDz647-Tx6vfSmlKioIoyXxHmnjn3Y9YJJuENCGFHWOjeSJKPUhwaMhGvan8KciklZwmbxINKAqAOEmDWInMNWc5kBQhnmWd37EwzxvRWS8VPKrZwrPdy3sIOOs5-As">
+    </a>
+    <p>Spider Man</p>
+</div>
+
+<div>
+    <a href="https://www.youtube.com/watch?v=FBv-X-SFI4o">
+        <img src="https://fr.web.img6.acsta.net/medias/nmedia/18/62/92/90/18780031.jpg" alt="Wall-e">
+    </a>
+    <p>Les simpsons le film</p>
+</div>
+<div>
+    <a href="https://films.wookafr.org/streaming/comedie/inseparables/">
+        <img src="https://fr.web.img6.acsta.net/pictures/19/07/30/09/20/1991246.jpg" alt="Wall-e">
+    </a>
+    <p>inséparables</p>
+</div>
+
+<div>
+    <a href="https://films.wookafr.org/streaming/science-fiction/en-eaux-tres-troubles/">
+        <img src="https://fr.web.img3.acsta.net/pictures/23/06/13/10/45/4427962.jpg" alt="Wall-e">
+    </a>
+    <p>En eau très trouble</p>
+</div>
+<div>
+    <a href="dune.html">
+        <img src=https://image.tmdb.org/t/p/w500/qpyaW4xUPeIiYA5ckg5zAZFHvsb.jpg">
+    </a>
+    <p>Dune</p>
+</div>
+<div>
+    <a href="https://www.tokyvideo.com/fr/video/super-mario-bros-le-film-2023-en-vf">
+        <img src="https://fr.web.img5.acsta.net/pictures/23/03/20/14/57/4979368.jpg" alt="Wall-e">
+    </a>
+    <p>Mario Bros le Film</p>
+</div>
+<div>
+    <a href="https://www.justwatch.com/be/film/en-eaux-troubles-2018">
+        <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/sKmxFCYGSync2zH94Aukzcp8yYA.jpg" alt="Wall-e">
+    </a>
+    <p>En eaux trouble</p>
+</div>
+<div>
+    <a href="https://site.wookafr.org/streaming/aventure/aquaman-et-le-royaume-perdu/">
+        <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/a70rdFN7SLTxAzEOf7M19R4W6q9.jpg">
+    </a>
+    <p>Aquaman</p>
+</div>
+
+<div>
+    <a href="wall-e.html">
+        <img src="https://fr.web.img3.acsta.net/medias/nmedia/18/63/93/01/18948378.jpg" alt="Wall-e">
+    </a>
+    <p>Film : Wall-e</p>
+</div>
+<div>
+    <a href="https://site.wookafr.org/streaming/aventure/avatar-la-voie-de-leau/">
+        <img src="https://m.media-amazon.com/images/I/8124Pstj51L._AC_UF1000,1000_QL80_.jpg" alt="Wall-e">
+    </a>
+    <p>Avatar : la voie de l'eau</p>
+</div>
+
+<div>
+    <a href="3 jours max.html">
+        <img src="https://fr.web.img3.acsta.net/pictures/23/07/11/17/03/2741635.jpg" alt="3 jours max">
+    </a>
+    <p>Film : 3 jours max</p>
+</div>
+<div>
+    <a href="https://www.tokyvideo.com/fr/video/il-etait-une-fois-dans-l-ouest-vf">
+        <img src="https://fr.web.img5.acsta.net/pictures/16/07/19/17/05/434841.jpg" alt="Baby Boss">
+    </a>
+    <p>Film : Il était une fois dans l'il-etait-une-fois-dans-l-ouest-vf</p>
+</div>
+<div>
+    <a href="pouris gatées.html">
+        <img src="https://fr.web.img3.acsta.net/pictures/21/03/01/11/08/1963890.jpg" alt="Baby Boss">
+    </a>
+    <p>Film :pouris gatés</p>
+</div>
+
+    
+
+<div>
+    <a href="cosuorico.html">
+        <img src="https://fr.web.img6.acsta.net/pictures/23/11/27/11/08/3575019.jpg" alt="Cocoriquo">
+    </a>
+    <p>Film : Cocoriquo</p>
+</div>
+<div>
+    <a href="les segpas.html">
+        <img src="https://fr.web.img5.acsta.net/pictures/22/02/04/17/58/3314454.jpg" alt="Cocoriquo">
+    </a>
+    <p>Film : les segpas</p>
+</div>
+
+
+
+<div>
+    <a href="wonka.html">
+        <img src="https://fr.web.img4.acsta.net/pictures/23/12/05/14/56/1249162.jpg">
+    </a>
+    <p>Film : willy wonka.</p>
+</div>
+
+<script>
+    function search() {
+        var input, filter, divs, a, txtValue;
+        input = document.getElementById('searchInput');
+        filter = input.value.toUpperCase();
+        divs = document.getElementsByTagName('div');
+
+        for (var i = 0; i < divs.length; i++) {
+            a = divs[i].getElementsByTagName('a')[0];
+            txtValue = a.getAttribute('href');
+
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                divs[i].style.display = '';
+            } else {
+                divs[i].style.display = 'none';
+            }
+        }
+    }
+</script>
+</body>
+</html>
