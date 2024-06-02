@@ -8,125 +8,28 @@
     <link rel="icon" href="https://www.creativefabrica.com/wp-content/uploads/2021/04/07/Simple-S-modern-logo-design-Graphics-10500913-2-580x387.jpg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="style_streamify.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #141414;
-            color: white;
-            margin: 0;
-        }
-
-        header {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            background-color: #141414;
-            padding: 10px 20px;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-
-        header a {
-            color: white;
-            text-decoration: none;
-            margin: 0 10px;
-            padding: 10px;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-        }
-
-        header a:hover {
-            background-color: rgba(255, 255, 255, 0.1);
-        }
-
-        #lang-select {
-            background-color: #141414;
-            color: white;
-            border: 1px solid white;
-            border-radius: 5px;
-            padding: 5px;
-        }
-
-        #searchInput {
-            padding: 5px;
-            border-radius: 5px;
-            border: 1px solid white;
-            background-color: #141414;
-            color: white;
-        }
-
-        .grid-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            gap: 15px;
-            padding: 20px;
-        }
-
-        .grid-item {
-            position: relative;
-            text-align: center;
-        }
-
-        .grid-item img {
-            width: 100%;
-            border-radius: 5px;
-            transition: transform 0.3s;
-        }
-
-        .grid-item img:hover {
-            transform: scale(1.05);
-        }
-
-        .grid-item p {
-            position: absolute;
-            bottom: 10px;
-            left: 10px;
-            color: white;
-            background-color: rgba(0, 0, 0, 0.7);
-            padding: 5px;
-            border-radius: 5px;
-        }
-
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #141414;
-            color: white;
-        }
-
-        footer a {
-            color: #e50914;
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
-        }
-    </style>
-</head>
-
-<body>
-    <header>
-        <select id="lang-select" onchange="changeLanguage()">
-            <option value="accueil.html">Français</option>
-            <option value="acceuille anglais.html">English</option>
-        </select>
-        <div>
+    <body>
+        <header>
+            <select id="lang-select" onchange="changeLanguage()">
+                <option value="accueil.html">Français</option>
+                <option value="acceuille anglais.html">English</option>
+                </select>
             <a href="films.html">🎬 Films</a>
             <a href="serie.html">📺 Séries</a>
-            <a href="jeux.html">🎮 Jeux</a>
-            <a id="direct-button" href="streamify TV.html">📺 streamify.TV</a>
-            <a id="music-button" href="https://www.zeffyrmusic.com">🎵 streamify.Musique</a>
-        </div>
-        <input type="text" id="searchInput" oninput="search()" placeholder="Rechercher...">
+            <input type="text" id="searchInput" oninput="search()" placeholder="Rechercher...">
+           
         <a id="discord-icon" href="https://discord.gg/N42nTpxJ" target="_blank">
             <i class="fab fa-discord"></i>
         </a>
+        <a id="direct-button" href="streamify TV.html">📺 streamify.TV</a>
+        <a id="music-button" href="https://www.zeffyrmusic.com">🎵 streamify.Musique</a>
+        <a id="music-button" href="jeux.html">🎮 Jeux</a>
     </header>
-
-    <div class="grid-container">
-        <div class="grid-item">
+    <header>
+        <!-- Vos autres éléments de navigation -->
+        
+    </header>
+    <div>
         <a href="https://wwv.wookafr.org/streaming/aventure/le-royaume-des-chats/">
             <img src="https://m.media-amazon.com/images/I/81fEIMzIzwS._AC_UF1000,1000_QL80_.jpg" alt="Wall-e">
         </a>
