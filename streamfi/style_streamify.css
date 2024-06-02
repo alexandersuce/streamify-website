@@ -1,3 +1,4 @@
+/* Styles globaux */
 body {
     display: flex;
     flex-wrap: wrap;
@@ -13,57 +14,49 @@ body.light-mode {
     background-color: #ffffff;
     color: #333;
 }
+
+/* Styles pour la bande de film */
 .movie-banner {
-    margin-right: 20px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #333; /* Couleur de fond de la bande */
+    background-color: #333;
     padding: 10px;
-    color: #fff; /* Couleur du texte */
+    color: #fff;
+    margin-right: 20px;
 }
 
 .movie {
-    margin-right: 20px;
     text-align: center;
-    flex: 1; /* Pour que chaque film occupe le même espace dans la bande */
+    flex: 1;
+    margin-right: 20px;
 }
+
 h2 {
-    text-align: center; /* Centrer le titre */
-    color: #fff; /* Couleur du texte */
-    background-color: #333; /* Couleur de fond */
-    padding: 10px; /* Ajouter de l'espace autour du titre */
+    text-align: center;
+    color: #fff;
+    background-color: #333;
+    padding: 10px;
 }
 
 .ducobu {
-    width: 150px; /* Largeur de l'image */
-    height: auto; /* Hauteur automatique pour maintenir les proportions */
-    float: left; /* Aligner l'image à gauche */
-    margin-right: 10px; /* Marge à droite pour séparer l'image du contenu voisin */
+    width: 150px;
+    height: auto;
+    float: left;
+    margin-right: 10px;
 }
 
 .movie img {
-    margin-right: 30px;
-    width: 100px; /* Ajustez la taille de l'image selon vos besoins */
-    height: auto;
-    margin-bottom: 5px;
+    margin: 0 auto 5px;
     display: block;
-    margin: 0 auto; /* Pour centrer l'image horizontalement */
+    width: 100px;
+    height: auto;
 }
 
 .movie span {
-    font-size: 16px; /* Taille de la police */
+    font-size: 16px;
     font-weight: bold;
 }
-.ducobu {
-    margin-left: 800px;
-    margin-right: 10px;
-    width: 150px; /* Largeur souhaitée */
-    height: auto; /* Hauteur automatique pour maintenir les proportions de l'image */
-    float: left; /* Pour aligner l'image à gauche */
-    margin-right: 10px; /* Marge à droite pour séparer l'image du contenu voisin */
-}
-
 
 header {
     display: flex;
@@ -81,11 +74,10 @@ h1 {
 }
 
 #discord-icon {
-    right: 10px;
     margin-right: 20px;
     cursor: pointer;
     display: flex;
-    align-items: left;
+    align-items: center;
     justify-content: flex-end;
 }
 
@@ -109,7 +101,6 @@ header a {
     padding: 5px 20px;
     text-decoration: none;
     text-align: center;
-    align-items: right;
     color: #fff;
     background-color: #7289da;
     border-radius: 5px;
@@ -144,7 +135,6 @@ div {
     transition: box-shadow 0.3s;
 }
 
-
 div:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
@@ -155,60 +145,14 @@ div:hover {
     padding: 5px 20px;
     text-decoration: none;
     text-align: center;
-    align-items: right;
     color: #fff;
     background-color: #39e681;
-    /* Change the background color as needed */
     border-radius: 5px;
     font-weight: bold;
 }
-/* Style pour la liste déroulante de sélection de langue */
-#lang-select {
-padding: 8px;
-border-radius: 4px;
-border: 1px solid #007BFF; /* Couleur de la bordure */
-font-size: 16px;
-background-color: #fff;
-color: #007BFF; /* Couleur du texte */
-cursor: pointer;
-transition: border-color 0.3s, background-color 0.3s, color 0.3s;
-}
-
-#lang-select:hover {
-border-color: #0056b3; /* Couleur de la bordure au survol */
-}
-
-#lang-select:focus {
-outline: none; /* Supprime la bordure autour du champ lorsque sélectionné */
-}
-
-/* Style pour les options de la liste déroulante */
-#lang-select option {
-padding: 8px;
-font-size: 16px;
-background-color: #fff;
-color: #333;
-}
-
-/* Style pour la flèche déroulante */
-#lang-select::-ms-expand {
-display: none; /* Masque la flèche déroulante dans IE */
-}
-
-/* Style pour la flèche déroulante (pour les autres navigateurs) */
-#lang-select::after {
-content: '\25BC'; /* Ajoute une flèche vers le bas */
-position: absolute;
-top: 50%;
-right: 10px;
-transform: translateY(-50%);
-pointer-events: none; /* Empêche le clic sur la flèche */
-}
-
 
 #direct-button:hover {
     background-color: #2ecc71;
-    /* Change the hover background color as needed */
 }
 
 #music-button {
@@ -217,7 +161,6 @@ pointer-events: none; /* Empêche le clic sur la flèche */
     padding: 5px 20px;
     text-decoration: none;
     text-align: center;
-    align-items: right;
     color: #fff;
     background-color: #1DB954;
     border-radius: 5px;
@@ -246,21 +189,14 @@ pointer-events: none; /* Empêche le clic sur la flèche */
     background-color: #d45244;
 }
 
-
 .theme-checkbox {
     --toggle-size: 16px;
-    -webkit-appearance: none;
-    -moz-appearance: none;
     appearance: none;
     width: 6.25em;
     height: 3.125em;
-    background: -webkit-gradient(linear, left top, right top, color-stop(50%, #efefef), color-stop(50%, #2a2a2a)) no-repeat;
-    background: -o-linear-gradient(left, #efefef 50%, #2a2a2a 50%) no-repeat;
     background: linear-gradient(to right, #efefef 50%, #2a2a2a 50%) no-repeat;
     background-size: 205%;
     background-position: 0;
-    -webkit-transition: 0.4s;
-    -o-transition: 0.4s;
     transition: 0.4s;
     border-radius: 99em;
     position: relative;
@@ -275,14 +211,10 @@ pointer-events: none; /* Empêche le clic sur la flèche */
     position: absolute;
     top: 0.438em;
     left: 0.438em;
-    background: -webkit-gradient(linear, left top, right top, color-stop(50%, #efefef), color-stop(50%, #2a2a2a)) no-repeat;
-    background: -o-linear-gradient(left, #efefef 50%, #2a2a2a 50%) no-repeat;
     background: linear-gradient(to right, #efefef 50%, #2a2a2a 50%) no-repeat;
     background-size: 205%;
     background-position: 100%;
     border-radius: 50%;
-    -webkit-transition: 0.4s;
-    -o-transition: 0.4s;
     transition: 0.4s;
 }
 
@@ -293,4 +225,95 @@ pointer-events: none; /* Empêche le clic sur la flèche */
 
 .theme-checkbox:checked {
     background-position: 100%;
+}
+
+/* Media queries pour différentes tailles d'écran */
+
+/* Smartphones en mode portrait et paysage */
+@media (max-width: 600px) {
+    .movie-banner, .movie, .ducobu, header, h1, #discord-icon, input[type="text"], header a, div {
+        flex-direction: column;
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .movie {
+        margin-bottom: 20px;
+    }
+
+    .ducobu {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    img {
+        width: 80%;
+    }
+
+    div {
+        flex: 0 0 100%;
+    }
+
+    header {
+        justify-content: center;
+        text-align: center;
+    }
+
+    #discord-icon {
+        margin: 10px 0;
+    }
+
+    input[type="text"] {
+        width: 80%;
+    }
+
+    header a {
+        width: 80%;
+        margin: 10px auto;
+    }
+}
+
+/* Tablettes en mode portrait et paysage */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .movie-banner, .movie, .ducobu, header, h1, #discord-icon, input[type="text"], header a, div {
+        flex-direction: column;
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .movie {
+        margin-bottom: 20px;
+    }
+
+    .ducobu {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    img {
+        width: 80%;
+    }
+
+    div {
+        flex: 0 0 48%;
+        margin: 10px 1%;
+    }
+
+    header {
+        justify-content: center;
+        text-align: center;
+    }
+
+    #discord-icon {
+        margin: 10px 0;
+    }
+
+    input[type="text"] {
+        width: 60%;
+    }
+
+    header a {
+        width: 60%;
+        margin: 10px auto;
+    }
 }
