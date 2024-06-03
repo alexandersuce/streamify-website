@@ -13,23 +13,35 @@ body {
     justify-content: center;
     height: 100vh;
 }
- p {
-    position: relative;
-    bottom: -60%;
-    left: -30%;
- }
+
 h1 {
     margin-bottom: 20px;
 }
 
+.account-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
 .account {
     display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
-.account-img,
-.account-icon {
-    width: 200px; /* Même taille pour l'image et l'icône */
-    height: 200px; /* Même taille pour l'image et l'icône */
-    margin-right: 20px; /* Espacement entre l'image et l'icône */
+.account-img {
+    width: 200px;
+    height: 200px;
 }
+
+.account p {
+    margin-top: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.icon-container {
+    margin-top: 20px;
+}
+
