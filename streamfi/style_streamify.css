@@ -38,6 +38,11 @@ h2 {
     background-color: #333;
     padding: 10px;
 }
+.Premium {
+    width: 100px;
+    height: 100px;
+    left: 200px;
+}
 
 .ducobu {
     width: 150px;
