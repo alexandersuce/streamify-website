@@ -8,24 +8,37 @@
     <link rel="icon" href="streamify logo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="style_streamify.css">
-    <body>
-        <header>
-            <a href="films.html">🎬 Films</a>
-            <a href="serie.html">📺 Séries</a>
-            <input type="text" id="searchInput" oninput="search()" placeholder="Rechercher...">
-           
-        <a id="discord-icon" href="https://discord.gg/dkpmZeAY" target="_blank">
+    <style>
+        .premium {
+            position: relative;
+        }
+        .premium-icon {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 50px;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="films.html">🎬 Films</a>
+        <a href="serie.html">📺 Séries</a>
+        <input type="text" id="searchInput" oninput="search()" placeholder="Rechercher...">
+        <a id="discord-icon" href="https://discord.gg/N42nTpxJ" target="_blank">
             <i class="fab fa-discord"></i>
         </a>
         <a id="direct-button" href="streamify TV.html">📺 streamify.TV</a>
         <a id="music-button" href="https://www.zeffyrmusic.com">🎵 streamify.Musique</a>
         <a id="music-button" href="jeux.html">🎮 Jeux</a>
     </header>
-    <header>
-        <!-- Vos autres éléments de navigation -->
-        
-    </header>
-        <div>
+    
+    <!-- Vos autres éléments de navigation -->
+    <div>
         <a href="https://www.dailymotion.com/video/x7sbopk">
             <img src="https://fr.web.img2.acsta.net/pictures/19/12/24/11/26/5091620.jpg" alt="Wall-e">
         </a>
@@ -48,7 +61,8 @@
             <img src="https://fr.web.img5.acsta.net/pictures/16/06/16/12/01/072037.jpg" alt="Wall-e">
         </a>
         <p>La grande vadrouille</p>
-        <div class="premium">
+         </div>
+    <div class="premium">
         <a href="https://www.tokyvideo.com/video/drive-2011-fr" class="film-link" data-url="https://www.tokyvideo.com/video/drive-2011-fr">
             <img src="https://nightofthelivingtrev.wordpress.com/wp-content/uploads/2011/12/drive-poster.jpg" alt="Drive">
             <img src="premium.png" alt="Premium" class="premium-icon">
@@ -56,7 +70,7 @@
         <p>Drive</p>
         <a href="abonnement.html">Acheter l'abonnement</a>
     </div>
-        <div>
+    <div>
         <a href="https://www.tokyvideo.com/fr/video/l-aile-ou-la-cuisse-de-funes-1h41-avi">
             <img src="https://fr.web.img4.acsta.net/medias/nmedia/18/36/37/32/18478100.jpg" alt="Wall-e">
         </a>
@@ -69,6 +83,7 @@
         <p>Le royaume des chats</p>
     </div>
     <div>
+        
         <a href="https://www.tokyvideo.com/fr/video/le-grand-bleu-vf">
             <img src="https://medias.boutique.lab.arte.tv/prod/76145_vod_thumb_362973-hd@2x.jpg" alt="Wall-e">
         </a>
@@ -222,7 +237,7 @@
         <p>série: Lupin</p>
     </div>
     <div>
-        <a href="https://wwv.wookafr.org/streaming/series/rick-et-morty/">
+        <a href="https://site.wookafr.org/streaming/series/rick-et-morty/">
             <img src="https://fr.web.img6.acsta.net/pictures/23/09/12/17/33/1036366.jpg" alt="Wall-e">
         </a>
         <p>rick et morty</p>
@@ -290,39 +305,9 @@
         <p>série:Nouvelle école</p>
     </div>
 
-    <script>
-        async function search(event) {
-            // Vérifier si la touche entrée a été enfoncée
-            if (event.key === 'Enter') {
-                const input = document.getElementById('searchInput').value.toLowerCase();
-                const films = Array.from(document.querySelectorAll('.film-title')).map(div => div.textContent.toLowerCase());
-                const matchingFilm = films.find(film => film.includes(input));
-                
-                if (matchingFilm) {
-                    alert(`Film trouvé sur votre site : ${matchingFilm}`);
-                } else {
-                    // Rediriger l'utilisateur vers la page de recherche avec les mots-clés
-                    const keywords = input.split(' ').join('+');
-                    window.location.href = `/search?q=${keywords}`;
-                }
-            }
-        }
-    </script>
-    
-  <a id="service-client-button" href="https://discord.gg/dkpmZeAY">Service Client</a>
+    <!-- Ajoutez d'autres films ici de manière similaire -->
 
-  <footer>
-    <div>
-        <h5>Tous droits réservés</h5>
-        <p>Ce site réunit les meilleurs sites de streaming sur Internet pour vous offrir une expérience complète de divertissement en ligne.</p>
-        <p>Pour devenir membre et nous aider à devenir le meilleur service de streaming,</p>
-        <a href="https://discord.gg/qCyCtq6n">cliquez ici</a>
-        <p>Des captchas peuvent être nécessaires pour certaines actions. Merci de signaler tout bug en cliquant sur le bouton "Service Client".</p>
-        <p>&copy; 2024 Streamify</p>
-    </div>
-</footer>
-  <script>
-      <script>
+    <script>
         const correctCode = "anp23HGB3ghl08Hgdjshjhdsds";
 
         document.querySelectorAll('.film-link').forEach(link => {
@@ -337,30 +322,26 @@
                 }
             });
         });
-    function changeLanguage() {
-        var langSelect = document.getElementById("lang-select");
-        var selectedPage = langSelect.value;
-        window.location.href = selectedPage;
-    }
-</script>
-<script>
-    function search() {
-        var input, filter, divs, a, txtValue;
-        input = document.getElementById('searchInput');
-        filter = input.value.toUpperCase();
-        divs = document.getElementsByTagName('div');
 
-        for (var i = 0; i < divs.length; i++) {
-            a = divs[i].getElementsByTagName('a')[0];
-            txtValue = a.getAttribute('href');
+        function search() {
+            var input, filter, divs, a, txtValue;
+            input = document.getElementById('searchInput');
+            filter = input.value.toUpperCase();
+            divs = document.getElementsByTagName('div');
 
-            if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                divs[i].style.display = '';
-            } else {
-                divs[i].style.display = 'none';
+            for (var i = 0; i < divs.length; i++) {
+                a = divs[i].getElementsByTagName('a')[0];
+                txtValue = a.getAttribute('href');
+
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    divs[i].style.display = '';
+                } else {
+                    divs[i].style.display = 'none';
+                }
             }
         }
-    }
-</script>
+    </script>
 </body>
+
 </html>
+
