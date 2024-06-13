@@ -1,11 +1,12 @@
 /* Styles globaux */
 body {
     display: flex;
-    flex-direction: column; /* Change to column to avoid conflict with the grid layout */
+    flex-wrap: wrap;
+    justify-content: space-around;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     background-color: #000000;
-    color: white; /* Fixed typo from #white to white */
+    color: #333;
     transition: background-color 0.3s;
 }
 
@@ -93,13 +94,11 @@ input[type="text"] {
     width: 150px;
     align-self: flex-start;
 }
-
 .Premium {
     width: 100px;
     height: 100px;
     left: 200px;
 }
-
 header a {
     display: inline-block;
     margin: 10px;
@@ -129,19 +128,15 @@ img:hover {
     transform: scale(1.05);
 }
 
-.container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
-    padding: 15px;
-}
-
 div {
-    background-color: #0000; /* Transparent background */
-    color: white;
+    text-align: center;
+    flex: 0 0 calc(33.3333% - 20px);
+    background-color: black;
     padding: 15px;
     border-radius: 8px;
+    color: aliceblue;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
     transition: box-shadow 0.3s;
 }
 
@@ -320,9 +315,8 @@ div:hover {
         width: 80%;
     }
 
-    .container {
-        grid-template-columns: 1fr; /* Single column for smaller screens */
-        gap: 10px;
+    div {
+        flex: 0 0 100%;
     }
 
     header {
@@ -343,4 +337,3 @@ div:hover {
         margin: 10px auto;
     }
 }
-
