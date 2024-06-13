@@ -94,7 +94,11 @@ input[type="text"] {
     width: 150px;
     align-self: flex-start;
 }
-
+.Premium {
+    width: 100px;
+    height: 100px;
+    left: 200px;
+}
 header a {
     display: inline-block;
     margin: 10px;
