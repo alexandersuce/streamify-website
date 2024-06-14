@@ -14,24 +14,139 @@ body.light-mode {
     background-color: #ffffff;
     color: #333;
 }
+/* Reset des styles et base */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    color: black; /* Couleur du texte dans le header */
+    position: relative;
+    width: 100%; /* Remplir toute la largeur de la fenêtre */
+    background-color: transparent; /* Fond transparent */
+}
+
+#logo-link {
+    width: 50px; /* Ajuster la taille du logo selon tes besoins */
+}
+
+#logo-link img {
+    width: 100%;
+    height: auto;
+}
+
+.header-center {
+    flex: 1; /* Centre les éléments au milieu */
+    text-align: center;
+}
+
+.header-center a {
+    margin: 0 20px;
+    text-decoration: none;
+    color: gray; /* Couleur des liens Films et Séries */
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Police stylée */
+    transition: color 0.3s;
+}
+
+.header-center a:hover {
+    color: rgb(255, 255, 255); /* Couleur au survol */
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.dropbtn {
+    background-color: transparent;
+    color: gray; /* Couleur du texte du bouton */
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #000000;
+    min-width: 160px;
+    border-radius: 20px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    background-color: red;
+    margin: 10px;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+}
+
+.dropdown-content a:hover {
+    background-color: #c21a1a;
+    color: aliceblue;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+#dots-container {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+/* Styles pour le menu des trois petits points */
+.dot {
+    width: 4px;
+    height: 4px;
+    background-color: #777;
+    border-radius: 50%;
+    margin: 0 3px;
+}
+
+/* Styles pour le bouton User */
+#user-button {
+    text-decoration: none;
+    color: #555;
+    font-size: 16px;
+    padding: 8px 12px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#user-button:hover {
+    background-color: #555;
+    color: white;
+}
+
+
+/* Animation 3D au survol avec suivi de la souris */
+.dot:hover {
+    transform: scale(2);
+}
+
 
 /* Styles pour la bande de film */
-.movie-banner {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #333;
-    padding: 10px;
-    color: #fff;
-    margin-right: 20px;
-}
-
-.movie {
-    text-align: center;
-    flex: 1;
-    margin-right: 20px;
-}
-
 h2 {
     text-align: center;
     color: #fff;
@@ -39,33 +154,7 @@ h2 {
     padding: 10px;
 }
 
-.ducobu {
-    width: 150px;
-    height: auto;
-    float: left;
-    margin-right: 10px;
-}
 
-.movie img {
-    margin: 0 auto 5px;
-    display: block;
-    width: 100px;
-    height: auto;
-}
-
-.movie span {
-    font-size: 16px;
-    font-weight: bold;
-}
-
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    background-color: #333;
-    padding: 10px;
-}
 
 h1 {
     text-align: center;
@@ -73,18 +162,7 @@ h1 {
     flex: 1;
 }
 
-#discord-icon {
-    margin-right: 20px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-}
 
-#discord-icon i {
-    font-size: 24px;
-    margin-right: 5px;
-}
 
 input[type="text"] {
     padding: 8px;
@@ -94,87 +172,77 @@ input[type="text"] {
     width: 150px;
     align-self: flex-start;
 }
+
 .Premium {
     width: 100px;
     height: 100px;
     left: 200px;
 }
-header a {
-    display: inline-block;
-    margin: 10px;
-    padding: 5px 20px;
-    text-decoration: none;
-    text-align: center;
-    color: #fff;
-    background-color: #7289da;
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.film-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.films {
+    border: 1px solid #ddd;
     border-radius: 5px;
-    font-weight: bold;
-}
-
-header a:hover {
-    background-color: #2980b9;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-    margin: 10px;
-    border-radius: 8px;
+    overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
+    transition: transform 0.2s;
 }
 
-img:hover {
+.films:hover {
     transform: scale(1.05);
 }
 
-div {
+.films img {
+    width: 100%;
+    height: auto;
+}
+
+.films p {
     text-align: center;
-    flex: 0 0 calc(33.3333% - 20px);
-    background-color: black;
-    padding: 15px;
-    border-radius: 8px;
-    color: aliceblue;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 10px;
-    transition: box-shadow 0.3s;
+    padding: 10px;
+    background-color: #f8f8f8;
+    margin: 0;
 }
 
-div:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+.films.premium {
+    position: relative;
 }
 
-#direct-button {
-    display: inline-block;
-    margin: 10px;
-    padding: 5px 20px;
+.films.premium img.premium-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: auto;
+}
+
+.films.premium a {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    background-color: gold;
+    color: white;
     text-decoration: none;
-    text-align: center;
-    color: #fff;
-    background-color: #39e681;
-    border-radius: 5px;
-    font-weight: bold;
 }
 
-#direct-button:hover {
-    background-color: #2ecc71;
+.films.premium a:hover {
+    background-color: darkgoldenrod;
 }
 
-#music-button {
-    display: inline-block;
-    margin: 10px;
-    padding: 5px 20px;
-    text-decoration: none;
-    text-align: center;
-    color: #fff;
-    background-color: #1DB954;
-    border-radius: 5px;
-    font-weight: bold;
-}
 
-#music-button:hover {
-    background-color: #1DB954;
-}
 
 #service-client-button {
     position: fixed;
@@ -337,3 +405,45 @@ div:hover {
         margin: 10px auto;
     }
 }
+
+/* Container styles */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+
+.container div {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 0.5rem;
+    padding: 1rem;
+    text-align: center;
+    width: 200px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.premium {
+    position: relative;
+}
+
+.premium-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+}
+
+.hidden {
+    display: none;
+}
+
