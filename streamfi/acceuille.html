@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Streamify - Accueil</title>
     <link rel="icon" href="streamify logo.png">
+    <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="style_streamify.css">
     <style>
@@ -31,26 +32,54 @@
         </a>
         <nav class="header-center">
             <a href="films.html">Films</a>
+            <input class="search" id="searchInput" placeholder="Rechercher des contenus">
             <a href="series.html">Séries</a>
-            <div class="dropdown">
-                <button class="dropbtn">&#8285;</button>
-                <div class="dropdown-content">
-                    <a href="streamify TV.html">Streamify TV</a>
-                    <a href="jeux.html">Jeux</a>
-                    <a href="#">Autres</a>
-                </div>
-            </div>
         </nav>
-        <div class="header-right">
-            <div class="dots" id="dots-container">
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-            </div>
-            <a href="index.html" id="user-button">User</a>
+        <a href="index.html" class="user-button">
+            <i class="fas fa-user"></i>
+        </a>
         </div>
     </header>
+    <script>document.addEventListener('DOMContentLoaded', function() {
+        const searchInput = document.getElementById('searchInput');
+        const films = document.querySelectorAll('.film, .films');
+        const filmData = Array.from(films).map(film => ({
+            element: film,
+            title: film.querySelector('p').innerText
+        }));
     
+        const options = {
+            keys: ['title'],
+            threshold: 0.3  // Plus le nombre est bas, plus la recherche est stricte
+        };
+    
+        const fuse = new Fuse(filmData, options);
+    
+        searchInput.addEventListener('input', function() {
+            const query = searchInput.value;
+            const result = fuse.search(query);
+    
+            films.forEach(film => film.classList.add('hidden'));
+            result.forEach(({ item }) => item.element.classList.remove('hidden'));
+        });
+    
+        searchInput.addEventListener('keypress', function(event) {
+            if (event.key === 'Enter') {
+                event.preventDefault();
+                const query = searchInput.value;
+                const result = fuse.search(query);
+    
+                if (result.length > 0) {
+                    const firstResult = result[0].item;
+                    alert(`Film trouvé : ${firstResult.title}`);
+                } else {
+                    alert('Film non trouvé');
+                }
+            }
+        });
+    });
+    
+    </script>
     
     <!-- Vos autres éléments de navigation -->
  
