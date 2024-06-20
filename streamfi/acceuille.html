@@ -328,40 +328,7 @@
 
     <!-- Ajoutez d'autres films ici de manière similaire -->
 
-    <script>
-        const correctCode = "anp23HGB3ghl08Hgdjshjhdsds";
 
-        document.querySelectorAll('.film-link').forEach(link => {
-            link.addEventListener('click', function(event) {
-                event.preventDefault();
-                const userCode = prompt("Veuillez entrer le code premium :");
-
-                if (userCode === correctCode) {
-                    window.location.href = this.getAttribute('data-url');
-                } else {
-                    alert("Code incorrect. Veuillez réessayer.");
-                }
-            });
-        });
-
-        function search() {
-            var input, filter, divs, a, txtValue;
-            input = document.getElementById('searchInput');
-            filter = input.value.toUpperCase();
-            divs = document.getElementsByTagName('div');
-
-            for (var i = 0; i < divs.length; i++) {
-                a = divs[i].getElementsByTagName('a')[0];
-                txtValue = a.getAttribute('href');
-
-                if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                    divs[i].style.display = '';
-                } else {
-                    divs[i].style.display = 'none';
-                }
-            }
-        }
-    </script>
 </body>
 
 </html>
