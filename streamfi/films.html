@@ -8,8 +8,6 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 
     <style>
-        /* Votre CSS reste inchangé */
-
         body {
             display: flex;
             flex-wrap: wrap;
@@ -64,7 +62,7 @@
             transform: scale(1.05);
         }
 
-        div {
+        .film {
             text-align: center;
             flex: 0 0 calc(33.3333% - 20px);
             background-color: #007BFF;
@@ -74,7 +72,7 @@
             transition: box-shadow 0.3s;
         }
 
-        div:hover {
+        .film:hover {
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
         }
 
@@ -87,7 +85,6 @@
             float: right;
         }
 
-        
         .rounded-pill {
             border-radius: 50px !important;
         }
@@ -97,52 +94,40 @@
 <body>
     <header>
         <a href="acceuille.html">
-            <h1>Streamify films</h1>
+            <h1>Streamifi Films</h1>
         </a>
         <input type="text" id="searchInput" onkeyup="search()" placeholder="Rechercher...">
 
-        <!-- Utilisez le bouton et le menu déroulant Bootstrap -->
         <div class="dropdown">
             <button class="btn btn-primary rounded-pill" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Genres</button>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                 <div class="dropdown-scroll">
                     <a class="dropdown-item" href="action.html">Action</a>
-                    <a class="dropdown-item" href="comédie.html">comédie</a>
+                    <a class="dropdown-item" href="comédie.html">Comédie</a>
                     <!-- ... (ajoutez les autres genres) ... -->
                 </div>
             </div>
         </div>
     </header>
 
-   
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-</body>
-<div class="films">
+    <div class="films">
         <div class="film">
             <a href="https://wwv.wookafr.org/streaming/series/la-chronique-des-bridgerton/">
-                <img src="https://wwv.wookafr.org/wp-content/uploads/2024/02/hiEIKOkaP1PcWUeqjWeKr8eWF1Q.jpg" alt="Wall-e">
+                <img src="https://wwv.wookafr.org/wp-content/uploads/2024/02/hiEIKOkaP1PcWUeqjWeKr8eWF1Q.jpg" alt="La Chronique des Bridgerton">
             </a>
             <p>La Chronique des Bridgerton</p>
         </div>
-        <div class="films">
+        <div class="film">
             <a href="https://wwv.wookafr.org/streaming/series/lete-ou-je-suis-devenue-jolie/">
-                <img src="https://wwv.wookafr.org/wp-content/uploads/2023/12/1UjOeSZHunQqpSimmobGCWzkuXh.jpg" alt="Wall-e">
+                <img src="https://wwv.wookafr.org/wp-content/uploads/2023/12/1UjOeSZHunQqpSimmobGCWzkuXh.jpg" alt="Le jour où je suis devenue jolie">
             </a>
-            <p>Le jour ou je suis devenue jolie</p>
+            <p>Le jour où je suis devenue jolie</p>
         </div>
-        <div class="films">
+        <div class="film">
             <a href="https://wwv.wookafr.org/streaming/comedie/a-travers-ma-fenetre-3-les-yeux-dans-les-yeux/">
-                <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/maJNyAG2WLHfoigbYZsGznK7KSM.jpg" alt="Wall-e">
+                <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/maJNyAG2WLHfoigbYZsGznK7KSM.jpg" alt="À travers ma fenêtre 3">
             </a>
-            <p>A travers ma fenêtre3</p>
-        </div>
-          <div class="films">
-            <a href="https://www.dailymotion.com/video/x8vyhi0">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2zkCZ_OI8JvNgYq3vMbefaHWnuFHIYnYmFg&s" alt="Wall-e">
-            </a>
-            <p>A travers ma fenêtre 1</p>
+            <p>À travers ma fenêtre 3</p>
         </div>
         <div class="films">
             <a href="https://wwv.wookafr.org/streaming/comedie/dans-5-ans/">
