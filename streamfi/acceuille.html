@@ -84,12 +84,6 @@
     <!-- Vos autres éléments de navigation -->
  
     <div class="film-container">
-            <div class="films">
-            <a href="https://wwv.wookafr.org/streaming/thriller/sous-la-seine/">
-                <img src="https://fr.web.img6.acsta.net/img/63/9a/639a5ebe313496018137c91152b1b914.jpg" alt="Parasite">
-            </a>
-            <p> Top du moment: Sous la seine</p>
-        </div>
         <div class="films">
             <a href="https://wwv.wookafr.org/streaming/series/la-chronique-des-bridgerton/">
                 <img src="https://wwv.wookafr.org/wp-content/uploads/2024/02/hiEIKOkaP1PcWUeqjWeKr8eWF1Q.jpg" alt="Wall-e">
@@ -100,19 +94,13 @@
             <a href="https://wwv.wookafr.org/streaming/series/lete-ou-je-suis-devenue-jolie/">
                 <img src="https://wwv.wookafr.org/wp-content/uploads/2023/12/1UjOeSZHunQqpSimmobGCWzkuXh.jpg" alt="Wall-e">
             </a>
-            <p>Le jour ou je suis devenue jolie</p>
+            <p>L'été ou je suis devenue jolie</p>
         </div>
         <div class="films">
             <a href="https://wwv.wookafr.org/streaming/comedie/a-travers-ma-fenetre-3-les-yeux-dans-les-yeux/">
                 <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/maJNyAG2WLHfoigbYZsGznK7KSM.jpg" alt="Wall-e">
             </a>
-            <p>A travers ma fenêtre3</p>
-        </div>
-          <div class="films">
-            <a href="https://www.dailymotion.com/video/x8vyhi0">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2zkCZ_OI8JvNgYq3vMbefaHWnuFHIYnYmFg&s" alt="Wall-e">
-            </a>
-            <p>A travers ma fenêtre 1</p>
+            <p>A travers ma fenêtre</p>
         </div>
         <div class="films">
             <a href="https://wwv.wookafr.org/streaming/comedie/dans-5-ans/">
@@ -167,6 +155,12 @@
                 <img src="https://fr.web.img2.acsta.net/pictures/22/09/29/08/42/5363876.jpg" alt="Wall-e">
             </a>
             <p>Smile</p>
+        </div>
+        <div class="films">
+            <a href="https://wwv.wookafr.org/streaming/thriller/sous-la-seine/">
+                <img src="https://fr.web.img6.acsta.net/img/63/9a/639a5ebe313496018137c91152b1b914.jpg" alt="Parasite">
+            </a>
+            <p>Sous la seine</p>
         </div>
         <div class="films">
             <a href="https://wwv.wookafr.org/streaming/episodes/squeezie-merci-internet-saison-1-episode-1/">
@@ -234,11 +228,13 @@
             </a>
             <p>La grande vadrouille</p>
         </div>
-        <div class="films">
+        <div class="films premium">
             <a href="https://www.tokyvideo.com/video/drive-2011-fr" class="film-link" data-url="https://www.tokyvideo.com/video/drive-2011-fr">
                 <img src="https://nightofthelivingtrev.wordpress.com/wp-content/uploads/2011/12/drive-poster.jpg" alt="Drive">
+                <img src="premium.png" alt="Premium" class="premium-icon">
             </a>
             <p>Drive</p>
+            <a href="abonnement.html">Acheter l'abonnement</a>
         </div>
         <div class="films">
             <a href="https://www.tokyvideo.com/fr/video/l-aile-ou-la-cuisse-de-funes-1h41-avi">
@@ -328,7 +324,40 @@
 
     <!-- Ajoutez d'autres films ici de manière similaire -->
 
+    <script>
+        const correctCode = "anp23HGB3ghl08Hgdjshjhdsds";
 
+        document.querySelectorAll('.film-link').forEach(link => {
+            link.addEventListener('click', function(event) {
+                event.preventDefault();
+                const userCode = prompt("Veuillez entrer le code premium :");
+
+                if (userCode === correctCode) {
+                    window.location.href = this.getAttribute('data-url');
+                } else {
+                    alert("Code incorrect. Veuillez réessayer.");
+                }
+            });
+        });
+
+        function search() {
+            var input, filter, divs, a, txtValue;
+            input = document.getElementById('searchInput');
+            filter = input.value.toUpperCase();
+            divs = document.getElementsByTagName('div');
+
+            for (var i = 0; i < divs.length; i++) {
+                a = divs[i].getElementsByTagName('a')[0];
+                txtValue = a.getAttribute('href');
+
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    divs[i].style.display = '';
+                } else {
+                    divs[i].style.display = 'none';
+                }
+            }
+        }
+    </script>
 </body>
 
 </html>
