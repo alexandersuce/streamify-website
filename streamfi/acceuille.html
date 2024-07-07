@@ -1,12 +1,9 @@
-<!DOCTYPE html>
-<html lang="fr">
-
-<head>
+<html lang="fr"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Streamify - Accueil</title>
     <link rel="icon" href="streamify logo.png">
-    <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6"></script><style type="text/css" id="operaUserStyle"></style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="style_streamify.css">
     <style>
@@ -50,7 +47,7 @@
 <body>
     <header>
         <a href="acceuille.html" id="logo-link">
-            <img src="file:///C:/Users/ELEVE_22/Documents/streamfi/streamify%20logo.png" alt="Streamify Logo">
+            <img src="streamify logo.png" alt="Streamify Logo">
         </a>
         <nav class="header-center">
             <a href="films.html">Films</a>
@@ -60,7 +57,7 @@
         <a href="index.html" class="user-button">
             <i class="fas fa-user"></i>
         </a>
-        </div>
+        
     </header>
     <script>document.addEventListener('DOMContentLoaded', function() {
         const searchInput = document.getElementById('searchInput');
@@ -105,7 +102,28 @@
     
     <!-- Vos autres éléments de navigation -->
  
-    <div class="film-container">
+    <div class="film-container" style="
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 55px;
+    /* display: grid; */
+    /* grid-template-columns: repeat(5, 1fr); */
+    /* grid-template-rows: repeat(4, 1fr); */
+    /* grid-column-gap: 10px; */
+    /* grid-row-gap: 45px; */
+    /* display: grid; */
+    /* grid-template-columns: repeat(5, 1fr); */
+    /* grid-template-rows: repeat(4, 1fr); */
+    /* grid-column-gap: 5px; */
+    /* grid-row-gap: 30px; */
+    /* display: grid; */
+    /* grid-template-columns: repeat(5, 1fr); */
+    /* grid-template-rows: repeat(4, 1fr); */
+    /* grid-column-gap: 2px; */
+    /* grid-row-gap: 20px; */
+">
         <div class="films">
             <a href="https://www.tokyvideo.com/fr/video/nos-jours-heureux-2006-vf">
                 <img src="https://fr.web.img2.acsta.net/medias/nmedia/18/36/08/25/18643047.jpg" alt="Mood">
@@ -230,7 +248,7 @@
             <a href="https://wwv.wookafr.org/streaming/fantastique/blue-compagnie/">
                 <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/iPMtq2aSKM1i8rCOCEpgtVQZBmO.jpg" alt="Mood">
             </a>
-            <p>Blue & Compagnie</p>
+            <p>Blue &amp; Compagnie</p>
         </div>
         <div class="films">
             <a href="https://wwv.wookafr.org/streaming/crime/ride/">
@@ -418,7 +436,7 @@
             <a href="https://wwv.wookafr.org/streaming/series/ralph-katie/">
                 <img src="https://wwv.wookafr.org/wp-content/uploads/2024/06/bvJk02bCJf76i1T3JugQWOd6nIb.jpg" alt="Ralph et Catie">
             </a>
-            <p>Ralph & Katie</p>
+            <p>Ralph &amp; Katie</p>
         </div>
         
         <div class="films">
@@ -870,6 +888,7 @@
             }
         }
     </script>
-</body>
 
-</html>
+
+
+</div></body></html>
