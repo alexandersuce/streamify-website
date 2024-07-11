@@ -134,14 +134,129 @@ window.onload = function() {
     /* grid-column-gap: 2px; */
     /* grid-row-gap: 20px; */
 ">
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <img src="https://streamify-website.vercel.app/streamify%20logo.png" alt="Euro 2024 Logo" class="logo">
+            <h1 class="title">Euro <span class="title">2024</span></h1>
+            <p class="message">
+                Tous les matchs sont disponibles gratuitement sur Streamify !<br>
+                Suivez les équipes nationales avec le drapeau de :  
+                <span class="flag"><img src="https://upload.wikimedia.org/wikipedia/commons/4/42/Flag_of_the_United_Kingdom.png" alt="UK"></span>,  
+                <span class="flag"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Spain_flag_300.png" alt="Spain"></span> et bien plus !<br>
+                Ne manquez aucun match, soutenez vos équipes préférées !<br>
+                Vivez l'excitation de chaque but et chaque victoire !<br>
+                Rendez-vous sur Streamify pour une expérience inégalée du football européen.
+            </p>
+            <button class="close-btn" onclick="closePopup()">Fermer</button>
+        </div>
+        <style>
+            body {
+    font-family: Arial, sans-serif;
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    border: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-content {
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    width: 80%;
+    max-width: 500px;
+}
+
+.close-btn {
+    background-color: #ff3131; /* Bleu ciel */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    background-color: #bc0202;
+}
+
+.title {
+    font-size: 2em;
+    color: red;
+    margin-bottom: 10px;
+}
+
+.title .blue {
+    color: blue;
+}
+
+.title .white {
+    color: white;
+}
+
+.title .red {
+    color: red;
+}
+
+.message {
+    font-size: 1.2em;
+    color: #ffffff;
+}
+
+.message::first-letter {
+    font-size: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.flag img {
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+span.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+        </style>
     </div>
     <script src="script.js"></script>
-         <div class="films">
-            <a href="https://vww.wookafr.org/streaming/series/surviving-summer/">
-                <img src="https://vww.wookafr.org/wp-content/uploads/2024/04/zJTi8sM9fvpYhZmxysVQnG4OFM9.jpg" alt="Mood">
-            </a>
-            <p>Surviving Summer</p>
-        </div>
+    <div class="films">
+        <a href="https://vww.wookafr.org/streaming/series/surviving-summer/">
+            <img src="https://vww.wookafr.org/wp-content/uploads/2024/04/zJTi8sM9fvpYhZmxysVQnG4OFM9.jpg" alt="Mood">
+        </a>
+        <p>Surviving Summer</p>
+    </div>
         <div class="films">
             <a href="https://www.tokyvideo.com/fr/video/nos-jours-heureux-2006-vf">
                 <img src="https://fr.web.img2.acsta.net/medias/nmedia/18/36/08/25/18643047.jpg" alt="Mood">
@@ -910,4 +1025,5 @@ window.onload = function() {
 
 
 </div>
-</body></html>
+</body>
+</html>
