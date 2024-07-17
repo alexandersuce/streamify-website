@@ -1,1032 +1,901 @@
 <html lang="fr" data-lt-installed="true"><head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Streamify - Accueil</title>
-    <link rel="icon" href="streamify logo.png">
-    <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6"></script><style type="text/css" id="operaUserStyle">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Streamify - Accueil</title>
+  <link rel="icon" href="original.png">
+  <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6"></script><style type="text/css" id="operaUserStyle">
 
 </style>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="style_streamify.css">
-    <style>
-        .premium {
-            position: relative;
-        }
-        .premium-icon {
-            position: absolute;
-            top: 0;
-            right: 0;
-            width: 50px;
-        }
-        .hidden {
-            display: none;
-        }
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+      .premium {
+          position: relative;
+      }
+      .premium-icon {
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 50px;
+      }
+      .hidden {
+          display: none;
+      }
 
-        /* Menu burger styles */
-        .menu-burger {
-            display: none;
-            cursor: pointer;
-            font-size: 24px;
-        }
-        .menu {
-            display: none;
-            flex-direction: column;
-            position: absolute;
-            top: 60px;
-            right: 0;
-            background-color: white;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-            z-index: 1000;
-        }
-        .menu a {
-            padding: 10px 20px;
-            text-align: center;
-            border-bottom: 1px solid #ddd;
-        }
-    </style>
-<style type="text/css">:root [href^="//mage98rquewz.com/"], :root [href^="//x4pollyxxpush.com/"], :root zeus-ad, :root span[id^="ezoic-pub-ad-placeholder-"], :root ins.adsbygoogle[data-ad-slot], :root guj-ad, :root gpt-ad, :root div[id^="zergnet-widget"], :root div[id^="vuukle-ad-"], :root div[id^="taboola-stream-"], :root div[id^="sticky_ad_"], :root div[id^="st"][style^="z-index: 999999999;"], :root div[id^="pa_sticky_ad_box_middle_"], :root div[id^="optidigital-adslot"], :root div[id^="gpt_ad_"], :root div[id^="ezoic-pub-ad-"], :root div[id^="dfp-ad-"], :root div[id^="crt-"][style], :root div[id^="adspot-"], :root div[id^="adrotate_widgets-"], :root ps-connatix-module, :root div[id^="ad_position_"], :root div[id^="ad-div-"], :root div[id*="ScriptRoot"], :root div[id*="MarketGid"], :root div[data-native_ad], :root div[data-native-ad], :root div[data-id-advertdfpconf], :root hl-adsense, :root div[data-contentexchange-widget], :root div[data-alias="300x250 Ad 2"], :root div[data-adzone], :root div[data-adunit-path], :root div[data-adname], :root div[data-ad-wrapper], :root div[data-ad-placeholder], :root div[class^="native-ad-"], :root div[data-dfp-id], :root div[class^="kiwi-ad-wrapper"], :root div[aria-label="Ads"], :root display-ads, :root display-ad-component, :root bottomadblock, :root atf-ad-slot, :root aside[id^="adrotate_widgets-"], :root ark-top-ad, :root amp-fx-flying-carpet, :root amp-embed[type="taboola"], :root amp-connatix-player, :root amp-ad-custom, :root amp-ad, :root div[id^="google_dfp_"], :root ad-slot, :root ad-shield-ads, :root a[style="width:100%;height:100%;z-index:10000000000000000;position:absolute;top:0;left:0;"], :root a[onmousedown^="this.href='https://paid.outbrain.com/network/redir?"][target="_blank"] + .ob_source, :root a[onmousedown^="this.href='http://paid.outbrain.com/network/redir?"][target="_blank"] + .ob_source, :root a[onmousedown^="this.href='http://paid.outbrain.com/network/redir?"][target="_blank"], :root a[href^="https://www.purevpn.com/"][href*="&utm_source=aff-"], :root a[href^="https://www.onlineusershielder.com/"], :root a[href^="https://www.nudeidols.com/cams/"], :root a[href^="https://financeads.net/tc.php?"], :root a[href^="https://www.mrskin.com/tour"], :root a[href^="https://www.kingsoffetish.com/tour?partner_id="], :root a[href^="https://www.infowarsstore.com/"] > img, :root a[href^="https://www.highperformancecpmgate.com/"], :root a[href^="https://www.highcpmrevenuenetwork.com/"], :root a[href^="https://lnkxt.bannerator.com/"], :root a[href^="https://www.geekbuying.com/dynamic-ads/"], :root a[href^="https://www.friendlyduck.com/AF_"], :root a[href^="https://www.financeads.net/tc.php?"], :root [href^="https://www.herbanomic.com/"] > img, :root a[href^="https://maymooth-stopic.com/"], :root a[href^="https://www.dql2clk.com/"], :root a[href^="https://www.nutaku.net/signup/landing/"], :root a[href^="https://www.dating-finder.com/signup/?ai_d="], :root a[href^="https://explore-site.com/"], :root a[href^="https://www.brazzersnetwork.com/landing/"], :root a[href^="https://www.adxsrve.com/"], :root [data-template-type="nativead"], :root a[href^="https://www.endorico.com/Smartlink/"], :root a[href^="https://www.adultempire.com/"][href*="?partner_id="], :root a[href^="https://voluum.prom-xcams.com/"], :root a[href^="https://twinrdsrv.com/"], :root a[href^="https://trk.nfl-online-streams.club/"], :root a[href^="https://tracking.avapartner.com/"], :root a[href^="https://track.wg-aff.com"], :root a[href^="https://track.ultravpn.com/"], :root a[href^="https://track.afcpatrk.com/"], :root a[href^="https://track.1234sd123.com/"], :root a[href^="https://torguard.net/aff.php"] > img, :root a[href^="https://tc.tradetracker.net/"] > img, :root a[href^="https://tatrck.com/"], :root a[href^="https://click.candyoffers.com/"], :root [href^="https://zstacklife.com/"] img, :root a[href^="https://t.aslnk.link/"], :root a[href^="https://t.ajrkm3.com/"], :root a[href^="https://t.adating.link/"], :root a[href^="https://safesurfingtoday.com/"][href*="?skip="], :root a[href^="https://land.brazzersnetwork.com/landing/"], :root a[href^="https://t.acam.link/"], :root a[href*="//daichoho.com/"], :root a[href^="https://syndication.optimizesrv.com/"], :root a[href^="https://go.trackitalltheway.com/"], :root [href^="https://track.fiverr.com/visit/"] > img, :root a[href^="https://syndication.exoclick.com/"], :root a[href^="https://syndication.dynsrvtbg.com/"], :root div[data-alias="300x250 Ad 1"], :root a[href^="https://syndicate.contentsserved.com/"], :root a[href^="https://svb-analytics.trackerrr.com/"], :root a[href^="https://streamate.com/landing/click/"], :root a[href^="https://ad.doubleclick.net/"], :root a[href^="https://static.fleshlight.com/images/banners/"], :root a[href^="https://slkmis.com/"], :root a[href^="https://s.zlink3.com/"], :root a[href^="https://www.mrskin.com/account/"], :root a[href^="https://s.optzsrv.com/"], :root a[href^="https://random-affiliate.atimaze.com/"], :root a[href^="https://quotationfirearmrevision.com/"], :root a[href^="https://pubads.g.doubleclick.net/"], :root a[href^="https://ak.oalsauwy.net/"], :root a[href^="https://softwa.cfd/"], :root a[href^="https://play1ad.shop/"], :root a[href^="https://prf.hn/click/"][href*="/camref:"] > img, :root a[href^="https://www.dating-finder.com/?ai_d="], :root a[href^="https://serve.awmdelivery.com/"], :root a[href^="https://prf.hn/click/"][href*="/adref:"] > img, :root app-ad, :root [href^="https://ap.octopuspop.com/click/"] > img, :root a[href^="https://postback1win.com/"], :root a[href^="https://a.adtng.com/"], :root a[href^="https://playnano.online/offerwalls/?ref="], :root a[href^="https://www.privateinternetaccess.com/"] > img, :root a[href^="https://mmwebhandler.aff-online.com/"], :root a[href^="https://www.bet365.com/"][href*="affiliate="], :root a[href^="https://pb-track.com/"], :root a[href^="https://pb-front.com/"], :root a[href^="https://paid.outbrain.com/network/redir?"], :root a[href^="https://ngineet.cfd/"], :root a[href^="https://upsups.click/"], :root a[href^="https://ndt5.net/"], :root a[href^="http://eighteenderived.com/"], :root a[href^="https://natour.naughtyamerica.com/track/"], :root a[href^="https://mediaserver.entainpartners.com/renderBanner.do?"], :root a[href^="https://www.sugarinstant.com/?partner_id="], :root a[href^="https://m.do.co/c/"] > img, :root [data-ad-name], :root a[href^="https://loboclick.com/"], :root .nya-slot[style], :root a[href^="https://a.bestcontentweb.top/"], :root a[href^="https://lobimax.com/"], :root a[href^="https://lead1.pl/"], :root a[href^="https://landing1.brazzersnetwork.com"], :root a[href^="https://landing.brazzersnetwork.com/"], :root a[href^="https://join.virtuallust3d.com/"], :root a[href^="https://kiksajex.com/"], :root a[href^="https://juicyads.in/"], :root a[href^="https://www.mypornstarcams.com/landing/click/"], :root a[href^="https://snowdayonline.xyz/"], :root a[href^="https://mediaserver.gvcaffiliates.com/renderBanner.do?"], :root a[href^="https://join.dreamsexworld.com/"], :root a[href^="https://jaxofuna.com/"], :root a[href^="https://itubego.com/video-downloader/?affid="], :root a[href^="https://italarizege.xyz/"], :root a[href^="https://iqbroker.com/"][href*="?aff="], :root a[href^="https://hot-growngames.life/"], :root a[href^="https://golinks.work/"], :root a[href^="https://go.xxxvjmp.com/"], :root [class^="tile-picker__CitrusBannerContainer-sc-"], :root a[href^="https://go.xxxiijmp.com"], :root a[href^="https://go.xtbaffiliates.com/"], :root .OUTBRAIN[data-widget-id^="FMS_REELD_"], :root [data-role="tile-ads-module"], :root a[href^="https://go.xlviirdr.com"], :root a[href^="https://go.xlviiirdr.com"], :root a[href^="https://ismlks.com/"], :root [href^="https://www.mypillow.com/"] > img, :root a[href^="https://go.xlirdr.com"], :root [data-css-class="dfp-inarticle"], :root a[href^="https://l.hyenadata.com/"], :root a[href^="https://go.tmrjmp.com"], :root a[href^="https://go.skinstrip.net"][href*="?campaignId="], :root a[href^="https://zirdough.net/"], :root a[href^="https://s.deltraff.com/"], :root a[href^="https://go.markets.com/visit/?bta="], :root a[href^="https://billing.purevpn.com/aff.php"] > img, :root a[href^="https://go.hpyrdr.com/"], :root a[href^="https://lijavaxa.com/"], :root a[href^="https://go.goaserv.com/"], :root a[href^="https://t.hrtye.com/"], :root a[href^="https://go.etoro.com/"] > img, :root a[href^="https://go.dmzjmp.com"], :root div[class^="Display_displayAd"], :root a[href^="https://www.bang.com/?aff="], :root #mgb-container > #mgb, :root a[href^="https://go.admjmp.com"], :root div[id^="div-gpt-"], :root a[href^="https://gml-grp.com/"], :root a[href^="https://get.surfshark.net/aff_c?"][href*="&aff_id="] > img, :root a[href^="https://gamingadlt.com/?offer="], :root a[href^="https://www.adskeeper.com"], :root [href^="https://www.reimageplus.com/"], :root a[data-redirect^="https://paid.outbrain.com/network/redir?"], :root [href^="https://clicks.affstrack.com/"] > img, :root a[href^="https://ak.hauchiwu.com/"], :root a[href^="https://engine.phn.doublepimp.com/"], :root a[href^="https://engine.blueistheneworanges.com/"], :root a[href^="https://eergortu.net/"], :root a[href^="https://dl-protect.net/"], :root a[href^="https://rixofa.com/"], :root a[href^="https://disobediencecalculatormaiden.com/"], :root a[href^="https://datingoffers30.info/"], :root a[href*=".foxqck.com/"], :root a[href^="https://ctosrd.com/"], :root a[href^="https://clixtrac.com/"], :root [href^="https://noqreport.com/"] > img, :root a[href^="https://clicks.pipaffiliates.com/"], :root a[href^="https://datewhisper.life/"], :root a[href^="https://get-link.xyz/"], :root a[href^="https://click.linksynergy.com/fs-bin/"] > img, :root a[href^="https://combodef.com/"], :root AD-TRIPLE-BOX, :root a[href^="https://click.hoolig.app/"], :root a[href^="https://track.totalav.com/"], :root img[src^="https://images.purevpnaffiliates.com"], :root a[href^="https://porntubemate.com/"], :root a[href^="https://clickadilla.com/"], :root a[href^="https://click.dtiserv2.com/"], :root a[href^="https://go.xlvirdr.com"], :root a[href^="http://www.iyalc.com/"], :root a[href^="https://claring-loccelkin.com/"], :root a[href^="https://s.ma3ion.com/"], :root a[href^="https://cams.imagetwist.com/in/?track="], :root a[href^="https://bongacams2.com/track?"], :root a[href^="https://t.ajrkm1.com/"], :root [href="https://masstortfinancing.com"] img, :root a[href^="https://bongacams10.com/track?"], :root a[href*=".g2afse.com/"], :root a[href^="https://bodelen.com/"], :root a[target="_blank"][onmousedown="this.href^='http://paid.outbrain.com/network/redir?"], :root a[href^="https://banners.livepartners.com/"], :root a[href^="http://revolvemockerycopper.com/"], :root a[href^="https://awptjmp.com/"], :root a[href^="https://join.sexworld3d.com/track/"], :root a[href^="https://intenseaffiliates.com/redirect/"], :root a[href^="https://aweptjmp.com/"], :root [class^="s2nPlayer"], :root a[href^="https://chaturbate.jjgirls.com/?track="], :root a[href^="https://ausoafab.net/"], :root a[href^="https://activate-game.com/"], :root .scroll-fixable.rail-right > .deals-rail, :root [data-wpas-zoneid], :root a[href^="https://a2.adform.net/"], :root a[href^="https://auesk.cfd/"], :root a[href^="https://ak.psaltauw.net/"], :root a[href^="https://adclick.g.doubleclick.net/"], :root div[id^="ad-position-"], :root a[href^="https://leg.xyz/?track="], :root a[href^="https://www.toprevenuegate.com/"], :root a[href^="https://bc.game/"], :root a[href^="https://a.bestcontentoperation.top/"], :root a[href^="https://adultfriendfinder.com/go/"], :root a[href^="https://ads.planetwin365affiliate.com/"], :root a[href^="https://ads.leovegas.com/"], :root a[href^="https://a.candyai.love/"], :root [data-m-ad-id], :root a[href^="https://a-ads.com/"], :root div[id^="rc-widget-"], :root a[href^="http://eslp34af.click/"], :root a[href^="https://turnstileunavailablesite.com/"], :root a[href^="https://chaturbate.com/in/?"], :root ins.adsbygoogle[data-ad-client], :root [href^="https://freecourseweb.com/"] > .sitefriend, :root a[href^="https://prf.hn/click/"][href*="/creativeref:"] > img, :root a[href*="&maxads="], :root a[href^="http://www.adultempire.com/unlimited/promo?"][href*="&partner_id="], :root a[href^="https://1betandgonow.com/"], :root a[href^="https://www.googleadservices.com/pagead/aclk?"], :root a[href^="http://www.mrskin.com/tour"], :root a[href^="http://www.friendlyduck.com/AF_"], :root a[href^="https://getvideoz.click/"], :root a[href^="http://troopsassistedstupidity.com/"], :root a[href^="http://trk.globwo.online/"], :root a-ad, :root a[href^="https://offhandpump.com/"], :root a[href^="http://stickingrepute.com/"], :root #slashboxes > .deals-rail, :root a[href^="http://premonitioninventdisagree.com/"], :root a[href^="http://naggingirresponsible.com/"], :root a[href^="https://in.rabbtrk.com/"], :root div[data-ad-targeting], :root a[href^="https://hotplaystime.life/"], :root a[href^="http://www.h4trck.com/"], :root a[href^="https://81ac.xyz/"], :root a[href^="http://guestblackmail.com/"], :root a[href^="http://cam4com.go2cloud.org/aff_c?"], :root a[href^="https://ads.betfair.com/redirect.aspx?"], :root a[href^="https://ad.kubiccomps.icu/"], :root [href^="https://www.mypatriotsupply.com/"] > img, :root a[href^="https://trk.softonixs.xyz/"], :root a[href^="https://sexynearme.com/"], :root a[href^="https://myclick-2.com/"], :root a[href^="http://dragnag.com/"], :root [id^="div-gpt-ad"], :root .ob_container .item-container-obpd, :root div[id^="yandex_ad"], :root a[href^="https://www8.smartadserver.com/"], :root a[href^="https://pb-imc.com/"], :root a[href^="http://deskfrontfreely.com/"], :root a[href^="https://track.adform.net/"], :root a[href^="http://avthelkp.net/"], :root a[href^="https://a.medfoodhome.com/"], :root a[href^="https://engine.flixtrial.com/"], :root [data-type="ad-vertical"], :root a[href^="http://annulmentequitycereals.com/"], :root a[href^="//startgaming.net/tienda/" i], :root a[href^="https://www.get-express-vpn.com/offer/"], :root a[href^="//s.st1net.com/splash.php"], :root a[href^="https://join.virtualtaboo.com/track/"], :root [id^="ad_sky"], :root a[href^="http://coefficienttolerategravel.com/"], :root a[href^="https://a.medfoodsafety.com/"], :root a[href^="//go.eabids.com/"], :root a[href^=" https://www.friendlyduck.com/AF_"], :root a[href*="/jump/next.php?r="], :root [href^="https://ilovemyfreedoms.com/landing-"], :root a[href^="https://go.nordvpn.net/aff"] > img, :root .\[\&_\.gdprAdTransparencyCogWheelButton\]\:\!pjra-z-\[5\], :root [href^="http://clicks.totemcash.com/"], :root a[href^="https://ad.zanox.com/ppc/"] > img, :root [data-d-ad-id], :root a[href*=".engine.adglare.net/"], :root [href^="https://www.profitablegatecpm.com/"], :root div[id^="lazyad-"], :root a[href^="http://com-1.pro/"], :root a[href*=".cfm?domain="][href*="&fp="], :root [data-dynamic-ads], :root a[href^="https://xbet-4.com/"], :root a[data-widget-outbrain-redirect^="http://paid.outbrain.com/network/redir?"], :root [data-ad-width], :root [data-block-type="ad"], :root [href^="https://join.playboyplus.com/track/"], :root a[data-url^="http://paid.outbrain.com/network/redir?"] + .author, :root a[href^="https://ab.advertiserurl.com/aff/"], :root a[data-oburl^="https://paid.outbrain.com/network/redir?"], :root a[href^="https://trk.sportsflix4k.club/"], :root a[href^="http://dragfault.com/"], :root [href^="https://cpa.10kfreesilver.com/"], :root a[href^="https://a.bestcontentfood.top/"], :root a[data-obtrack^="http://paid.outbrain.com/network/redir?"], :root a[href^="https://go.xlivrdr.com"], :root [onclick^="location.href='https://1337x.vpnonly.site/"], :root [name^="google_ads_iframe"], :root [id^="section-ad-banner"], :root [data-advadstrackid], :root a[href^="http://muzzlematrix.com/"], :root [href^="https://zone.gotrackier.com/"], :root [href^="https://www.restoro.com/"], :root a[href^="https://bngpt.com/"], :root a[href^="https://www.sheetmusicplus.com/"][href*="?aff_id="], :root a[href^="http://adultfriendfinder.com/go/"], :root a[href^="https://fastestvpn.com/lifetime-special-deal?a_aid="], :root a[href^="https://tour.mrskin.com/"], :root citrus-ad-wrapper, :root a[onmousedown^="this.href='https://paid.outbrain.com/network/redir?"][target="_blank"], :root a[href^="https://go.grinsbest.com/"], :root a[href^="https://vo2.qrlsx.com/"], :root [href^="https://www.avantlink.com/click.php"] img, :root a[href^="https://losingoldfry.com/"], :root [href^="https://routewebtk.com/"], :root a[href^="https://t.ajump1.com/"], :root span[data-ez-ph-id], :root [href^="https://track.aftrk1.com/"], :root div[id^="adngin-"], :root [data-rc-widget], :root a[href^="https://go.hpyjmp.com"], :root [href^="https://mystore.com/"] > img, :root div[id^="div-ads-"], :root [href^="https://rapidgator.net/article/premium/ref/"], :root [href^="https://join.girlsoutwest.com/"], :root [href^="https://join3.bannedsextapes.com"], :root a[href^="https://go.xxxijmp.com"], :root [href^="https://istlnkcl.com/"], :root div[data-adunit], :root app-large-ad, :root [href^="https://turtlebids.irauctions.com/"] img, :root [href^="https://wct.link/click?"], :root [href^="https://go.xlrdr.com"], :root a[href^="https://tm-offers.gamingadult.com/"], :root [href^="https://charmingdatings.life/"], :root [href^="https://glersakr.com/"], :root [href^="https://v.investologic.co.uk/"], :root a[href^="https://www.goldenfrog.com/vyprvpn?offer_id="][href*="&aff_id="], :root [id^="ad-wrap-"], :root a[href*="//jjgirls.com/sex/Chaturbate"], :root [data-id^="div-gpt-ad"], :root a[href^="https://tracker.loropartners.com/"], :root [href^="https://awbbjmp.com/"], :root a[data-href^="http://ads.trafficjunky.net/"], :root a[href*=".adsrv.eacdn.com/"], :root [href^="https://antiagingbed.com/discount/"] > img, :root [href^="https://www.brighteonstore.com/products/"] img, :root a[href^="https://bngprm.com/"], :root [href^="https://shiftnetwork.infusionsoft.com/go/"] > img, :root a[href^="https://go.strpjmp.com/"], :root a[href^="https://go.bushheel.com/"], :root a[href^="https://ctjdwm.com/"], :root a[href^="https://camfapr.com/landing/click/"], :root [href="//sexcams.plus/"], :root [href^="http://www.mypillow.com/"] > img, :root [href^="https://www.targetingpartner.com/"], :root div[class^="Adstyled__AdWrapper-"], :root a[href^="https://startgaming.net/tienda/" i], :root .section-subheader > .section-hotel-prices-header, :root [href^="https://www.hostg.xyz/"] > img, :root #kt_player > a[target="_blank"], :root a[href^="http://bongacams.com/track?"], :root [href^="http://mypillow.com/"] > img, :root [href="https://ourgoldguy.com/contact/"] img, :root [href="https://www.masstortfinancing.com/"] > img, :root a[href^="https://go.rmhfrtnd.com/"], :root [href="https://jdrucker.com/gold"] > img, :root [href^="https://ad.admitad.com/"], :root [href^="https://mypillow.com/"] > img, :root [data-testid="ad_testID"], :root a[href^="http://handgripvegetationhols.com/"], :root [class^="amp-ad-"], :root a[href^="http://tc.tradetracker.net/"] > img, :root [data-ez-name], :root a[href^="https://black77854.com/"], :root [data-revive-zoneid] > iframe, :root [data-testid="adBanner-wrapper"], :root [href^="https://mylead.global/stl/"] > img, :root [href^="https://mypatriotsupply.com/"] > img, :root a[href^="https://witnessjacket.com/"], :root [data-mobile-ad-id], :root a[href^="https://fc.lc/ref/"], :root [data-adshim], :root topadblock, :root a[href^="//s.zlinkd.com/"], :root a[href^="https://bs.serving-sys.com"], :root a[href^="https://go.cmtaffiliates.com/"], :root [href^="https://optimizedelite.com/"] > img, :root [data-name="adaptiveConstructorAd"], :root a[href^="http://partners.etoro.com/"], :root [href^="https://goldcometals.com/clk.trk"], :root [data-desktop-ad-id], :root [href^="https://www.cloudways.com/en/?id"], :root a[href^="https://www.liquidfire.mobi/"], :root .grid > .container > #aside-promotion, :root DFP-AD, :root [id^="ad_slider"], :root [data-adbridg-ad-class], :root a[href^="https://linkboss.shop/"], :root [data-adblockkey], :root [onclick*="content.ad/"], :root [data-ad-manager-id], :root AMP-AD, :root [data-ad-cls], :root a[href^="https://6-partner.com/"], :root [href^="https://affiliate.fastcomet.com/"] > img, :root a[href^="https://go.mnaspm.com/"], :root [class^="adDisplay-module"], :root AD-SLOT, :root #kt_player > div[style="position: absolute; inset: 0px; z-index: 170;"], :root [data-freestar-ad][id], :root a[href^="https://go.xxxjmp.com"], :root #leader-companion > a[href], :root a[href^="http://www.adultdvdempire.com/?partner_id="][href*="&utm_"], :root [data-ad-module], :root app-advertisement, :root a[href^="https://getmatchedlocally.com/"], :root a[href^="https://clickins.slixa.com/"], :root [class^="div-gpt-ad"], :root a[href^="https://traffdaq.com/"], :root a[href^="https://cam4com.go2cloud.org/"], :root a[href^="http://li.blogtrottr.com/click?"], :root .ob_dual_right > .ob_ads_header ~ .odb_div { display: none !important; }</style></head>
- <script> function closePopup() {
-    document.getElementById('popup').style.display = 'none';
-}
-
-// Affiche le popup au chargement de la page
-window.onload = function() {
-    document.getElementById('popup').style.display = 'flex';
-};
-</script>
+      /* Menu burger styles */
+      .menu-burger {
+          display: none;
+          cursor: pointer;
+          font-size: 24px;
+      }
+      .menu {
+          display: none;
+          flex-direction: column;
+          position: absolute;
+          top: 60px;
+          right: 0;
+          background-color: white;
+          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+          z-index: 1000;
+      }
+      .menu a {
+          padding: 10px 20px;
+          text-align: center;
+          border-bottom: 1px solid #ddd;
+      }
+  </style>
 <body>
-    <header>
-        <a href="acceuille.html" id="logo-link">
-            <img src="https://streamify-website.vercel.app/streamify%20logo.png" alt="Streamify Logo">
-        </a>
-        <nav class="header-center">
-            <a href="films.html">Films</a>
-            <input class="search" id="searchInput" placeholder="Rechercher des contenus">
-            <a href="serie.html">Séries</a>
-        </nav>
-        <a href="index.html" class="user-button">
-            <i class="fas fa-user"></i>
-        </a>
-        
-    </header>
-    <script>document.addEventListener('DOMContentLoaded', function() {
-        const searchInput = document.getElementById('searchInput');
-        const films = document.querySelectorAll('.film, .films');
-        const filmData = Array.from(films).map(film => ({
-            element: film,
-            title: film.querySelector('p').innerText
-        }));
-    
-        const options = {
-            keys: ['title'],
-            threshold: 0.3  // Plus le nombre est bas, plus la recherche est stricte
-        };
-    
-        const fuse = new Fuse(filmData, options);
-    
-        searchInput.addEventListener('input', function() {
-            const query = searchInput.value;
-            const result = fuse.search(query);
-    
-            films.forEach(film => film.classList.add('hidden'));
-            result.forEach(({ item }) => item.element.classList.remove('hidden'));
-        });
-    
-        searchInput.addEventListener('keypress', function(event) {
-            if (event.key === 'Enter') {
-                event.preventDefault();
-                const query = searchInput.value;
-                const result = fuse.search(query);
-    
-                if (result.length > 0) {
-                    const firstResult = result[0].item;
-                    alert(`Film trouvé : ${firstResult.title}`);
-                } else {
-                    alert('Film non trouvé');
-                }
-            }
-        });
-    });
-    
-    </script>
-    
-    <!-- Vos autres éléments de navigation -->
- 
-    <div class="film-container" style="
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    grid-column-gap: 20px;
-    grid-row-gap: 55px;
-    /* display: grid; */
-    /* grid-template-columns: repeat(5, 1fr); */
-    /* grid-template-rows: repeat(4, 1fr); */
-    /* grid-column-gap: 10px; */
-    /* grid-row-gap: 45px; */
-    /* display: grid; */
-    /* grid-template-columns: repeat(5, 1fr); */
-    /* grid-template-rows: repeat(4, 1fr); */
-    /* grid-column-gap: 5px; */
-    /* grid-row-gap: 30px; */
-    /* display: grid; */
-    /* grid-template-columns: repeat(5, 1fr); */
-    /* grid-template-rows: repeat(4, 1fr); */
-    /* grid-column-gap: 2px; */
-    /* grid-row-gap: 20px; */
+  <header>
+      <a href="acceuille.html" id="logo-link">
+          <img src="original.png" alt="Streamify Logo">
+      </a>
+      <nav class="header-center">
+          <a href="films.html">Films</a>
+          <input class="search" id="searchInput" placeholder="Rechercher des contenus">
+          <a href="serie.html">Séries</a>
+      </nav>
+      <a href="index.html" class="user-button">
+          <i class="fas fa-user"></i>
+      </a>
+      
+  </header>
+  <script>document.addEventListener('DOMContentLoaded', function() {
+      const searchInput = document.getElementById('searchInput');
+      const films = document.querySelectorAll('.film, .films');
+      const filmData = Array.from(films).map(film => ({
+          element: film,
+          title: film.querySelector('p').innerText
+      }));
+  
+      const options = {
+          keys: ['title'],
+          threshold: 0.3  // Plus le nombre est bas, plus la recherche est stricte
+      };
+  
+      const fuse = new Fuse(filmData, options);
+  
+      searchInput.addEventListener('input', function() {
+          const query = searchInput.value;
+          const result = fuse.search(query);
+  
+          films.forEach(film => film.classList.add('hidden'));
+          result.forEach(({ item }) => item.element.classList.remove('hidden'));
+      });
+  
+      searchInput.addEventListener('keypress', function(event) {
+          if (event.key === 'Enter') {
+              event.preventDefault();
+              const query = searchInput.value;
+              const result = fuse.search(query);
+  
+              if (result.length > 0) {
+                  const firstResult = result[0].item;
+                  alert(`Film trouvé : ${firstResult.title}`);
+              } else {
+                  alert('Film non trouvé');
+              }
+          }
+      });
+  });
+  
+  </script>
+  
+  <!-- Vos autres éléments de navigation -->
+
+  <div class="film-container" style="
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 55px;
+  /* display: grid; */
+  /* grid-template-columns: repeat(5, 1fr); */
+  /* grid-template-rows: repeat(4, 1fr); */
+  /* grid-column-gap: 10px; */
+  /* grid-row-gap: 45px; */
+  /* display: grid; */
+  /* grid-template-columns: repeat(5, 1fr); */
+  /* grid-template-rows: repeat(4, 1fr); */
+  /* grid-column-gap: 5px; */
+  /* grid-row-gap: 30px; */
+  /* display: grid; */
+  /* grid-template-columns: repeat(5, 1fr); */
+  /* grid-template-rows: repeat(4, 1fr); */
+  /* grid-column-gap: 2px; */
+  /* grid-row-gap: 20px; */
 ">
-    <div id="popup" class="popup">
-        <div class="popup-content">
-            <img src="https://streamify-website.vercel.app/streamify%20logo.png" alt="Euro 2024 Logo" class="logo">
-            <h1 class="title">Finale Euro <span class="title">2024</span></h1>
-            <p class="message">
-                Tous les matchs sont disponibles gratuitement sur Streamify !<br>
-                Suivez les équipes nationales avec le drapeau de :  
-                <span class="flag"><img src="https://upload.wikimedia.org/wikipedia/commons/4/42/Flag_of_the_United_Kingdom.png" alt="UK"></span>,  
-                <span class="flag"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Spain_flag_300.png" alt="Spain"></span> et bien plus !<br>
-                Ne manquez aucun match, soutenez vos équipes préférées !<br>
-                Vivez l'excitation de chaque but et chaque victoire !<br>
-                Rendez-vous sur Streamify pour une expérience inégalée du football européen.
-            </p>
-            <button class="close-btn" onclick="closePopup()">Fermer</button>
-        </div>
-        <style>
-            body {
-    font-family: Arial, sans-serif;
-}
+ 
+  <script src="script.js"></script>
+  <div class="films">
+      <a href="https://vww.wookafr.org/streaming/series/surviving-summer/">
+          <img src="https://vww.wookafr.org/wp-content/uploads/2024/04/zJTi8sM9fvpYhZmxysVQnG4OFM9.jpg" alt="Mood">
+      </a>
+      <p>Surviving Summer</p>
+  </div>
+      <div class="films">
+          <a href="https://www.tokyvideo.com/fr/video/nos-jours-heureux-2006-vf">
+              <img src="https://fr.web.img2.acsta.net/medias/nmedia/18/36/08/25/18643047.jpg" alt="Mood">
+          </a>
+          <p>Nos jours heureux</p>
+      </div>
+      <div class="films">
+          <a href="https://wwv.wookafr.org/streaming/comedie/les-bronzes-3-amis-pour-la-vie/">
+              <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/9g7z9WG6MS3Q8cYfxTTBC4Ckm9A.jpg" alt="Mood">
+          </a>
+          <p>Les Bronzés 3 : Amis pour la vie</p>
+      </div>
+      <div class="films">
+          <a href="https://wwv.wookafr.org/streaming/comedie/les-bodins-chez-les-belges/">
+              <img src="https://fusion.molotov.tv/arts/i/446x588/Ch8SHQoUw0Jit6guEUVbaVATLi9yptr4FM8SA2pwZxgB/jpg" alt="Mood">
+          </a>
+          <p>Les bodins Chez les belges</p>
+      </div>
+      <div class="films">
+          <a href="https://wwv.wookafr.org/streaming/comedie/crush/">
+              <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/hayr56csDzCSADaejgrRMVPHyDy.jpg" alt="Mood">
+          </a>
+          <p>Crush</p>
+      </div>
+      <div class="films">
+          <a href="https://wwv.wookafr.org/streaming/drame/sur-la-terre-comme-au-ciel/">
+              <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/nBPbYM9ESNkPPXKcMMouIAz9rLy.jpg" alt="Mood">
+          </a>
+          <p>Sur la terre comme au ciel</p>
+      </div>
+      <div class="films">
+          <a href="https://wwv.wookafr.org/streaming/aventure/ferdinand/">
+              <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/il0QVflMD6TWKWygCVxSEZpfSgc.jpg" alt="Mood">
+          </a>
+          <p>Ferdinand</p>
+      </div>
+      <div class="films">
+          <a href="https://wwv.wookafr.org/streaming/comedie/the-boyfriend-pourquoi-lui/">
+              <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/1hWeSAsb1zTSI0Nng1vlsb7lF5Q.jpg" alt="Mood">
+          </a>
+          <p>The Boyfriend : Pourquoi lui ?</p>
+      </div>
+      <div class="films">
+          <a href="https://wwv.wookafr.org/streaming/thriller/la-chute-de-londres/">
+              <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/vuyOsftz7FrhVhHyMv7MNh6qLsH.jpg" alt="Mood">
+          </a>
+          <p>La chute de Londres</p>
+      </div>
+      <div class="films">
+          <a href="https://wwv.wookafr.org/streaming/drame/charm-city-kings/">
+              <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/9qp3fOzlUImJevdCJbAfl9A6yFI.jpg" alt="Mood">
+          </a>
+          <p>Baltimore</p>
+      </div>
+      <div class="films">
+          <a href="https://wwv.wookafr.org/streaming/crime/jamesy-boy/">
+              <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/fJCMNxUnYfOmej5FhXSOeMX2jSD.jpg" alt="Mood">
+          </a>
+          <p>James boy</p>
+      </div>
+      <div class="films">
+          <a href="https://wwv.wookafr.org/streaming/action/revenge/">
+              <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/a1wuUTjXvWhBYuVT21BPZ31YAB2.jpg" alt="Mood">
+          </a>
+          <p>Revenge</p>
+      </div>
+      <div class="films">
+          <a href="https://wwv.wookafr.org/streaming/drame/inchallah-un-fils/">
+              <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/krPPZk4Yr6KNpHX7yugxyGregH5.jpg" alt="Mood">
+          </a>
+          <p>Ich'allah un fils</p>
+      </div>
+      <div class="films">
+          <a href="https://wwv.wookafr.org/streaming/aventure/alvin-et-les-chipmunks-4-a-fond-la-caisse/">
+              <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/55WD5MrA7wuKluiF57ZbH64QfIL.jpg" alt="Mood">
+          </a>
+          <p>Alvin et les chimpmunks</p>
+      </div>
+      <div class="films">
+          <a href="https://wwv.wookafr.org/streaming/familial/safety/">
+              <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/x1VALfs1GJyCkLWG7YutqJ96srZ.jpg" alt="Mood">
+          </a>
+          <p>Safety</p>
+      </div>
+      <div class="films">
+          <a href="https://wwv.wookafr.org/streaming/aventure/lage-de-glace-4-la-derive-des-continents/">
+              <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/3M3ueeQA5rj0mHOOHnMoQatiZJh.jpg" alt="Mood">
+          </a>
+          <p>L'age de glace 4</p>
+      </div>
+      <div class="films">
+          <a href="https://wwv.wookafr.org/streaming/series/school-spirits/">
+              <img src="https://wwv.wookafr.org/wp-content/uploads/2024/05/eb7ZJYZjed1bBQ8a4aMDwp5nvjF.jpg" alt="Mood">
+          </a>
+          <p>School Spirits</p>
+      </div>
+      <div class="films">
+          <a href="https://wwv.wookafr.org/streaming/familial/my-spy/">
+              <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/55LLHeLTTkZkb3C4gTu1ELiuwK4.jpg" alt="Mood">
+          </a>
+          <p>My Spy</p>
+      </div>
+      <div class="films">
+          <a href="https://wwv.wookafr.org/streaming/aventure/les-incognitos/">
+              <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/aWWvMSVwUjKhrMusELcBH8FymnW.jpg" alt="Mood">
+          </a>
+          <p>Les incognitos</p>
+      </div>
+      <div class="films">
+          <a href="https://wwv.wookafr.org/streaming/drame/la-couleur-de-la-victoire/">
+              <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/xDSQGTR0pGelCXrb0QmgKAxj9qw.jpg" alt="Mood">
+          </a>
+          <p>La couleur de la victoire</p>
+      </div>
+      <div class="films">
+          <a href="https://wwv.wookafr.org/streaming/aventure/zootopie/">
+              <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/xEx4dHi2IrTB0vkVPccrGrMcZQW.jpg" alt="Mood">
+          </a>
+          <p>Zootopie</p>
+      </div>
+      <div class="films">
+          <a href="https://wwv.wookafr.org/streaming/fantastique/blue-compagnie/">
+              <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/iPMtq2aSKM1i8rCOCEpgtVQZBmO.jpg" alt="Mood">
+          </a>
+          <p>Blue &amp; Compagnie</p>
+      </div>
+      <div class="films">
+          <a href="https://wwv.wookafr.org/streaming/crime/ride/">
+              <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/iz4HyLI79FRDVNx3uj2B3dx7VTL.jpg" alt="Mood">
+          </a>
+          <p>Ride</p>
+      </div>
+      <div class="films">
+          <a href="https://wwv.wookafr.org/streaming/comedie/love-coach-malgre-moi/">
+              <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/nmAfJBzO05Jt87FPlV3oSBbPXwM.jpg" alt="Mood">
+          </a>
+          <p>Love coach</p>
+      </div>
+      <div class="films">
+          <a href="https://wwv.wookafr.org/streaming/comedie/manuel-de-survie-a-lapocalypse-zombie/">
+              <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/uG7tiTvfAWPi7oXhXoUuG8vJBnr.jpg" alt="Mood">
+          </a>
+          <p>Scouts VS Zombies</p>
+      </div>
+      <div class="films">
+          <a href="https://wwv.wookafr.org/streaming/thriller/dans-la-brume/">
+              <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/3OzWENKDOrJCeT2GTjWE8NOkbrZ.jpg" alt="Mood">
+          </a>
+          <p>Dans la brume</p>
+      </div>
+      <div class="films">
+          <a href="https://wwv.wookafr.org/streaming/comedie/maison-de-retraite-2/">
+              <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/kulQJnYektZnP3yXsdXkWZnpinM.jpg" alt="Mood">
+          </a>
+          <p>Maison de retraite 2</p>
+      </div>
+      <div class="films">
+          <a href="https://wwv.wookafr.org/streaming/comedie/fastlife/">
+              <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/AdzW7z9L1lKhVQ2uIESImGFaAWo.jpg" alt="Mood">
+          </a>
+          <p>Fastlife</p>
+      </div>
+      <div class="films">
+          <a href="https://wwv.wookafr.org/streaming/thriller/limitless/">
+              <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/dG2dsBiy11m7zHSdwlWymvIjOK.jpgg" alt="Mood">
+          </a>
+          <p>Limitless</p>
+      </div>
+      <div class="films">
+          <a href="https://wwv.wookafr.org/streaming/thriller/bad-boys-ride-or-die/">
+              <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/mCAIYEtOajcdaJPEHGUUo63vurC.jpg" alt="Mood">
+          </a>
+          <p>Bad Boys: Ride or Die</p>
+      </div>
+      <div class="films">
+          <a href="https://wwv.wookafr.org/streaming/comedie/az-exister/">
+              <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/hvA86X4K5ipGZrvsM1NlgRMYYFp.jpg" alt="Mood">
+          </a>
+          <p>Az – Exister</p>
+      </div>
+      <div class="films">
+          <a href="https://wwv.wookafr.org/streaming/documentaire/giroud/">
+              <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/jyf0imOWGDBya1E6bJS9EHJsIOz.jpg" alt="Mood">
+          </a>
+          <p>Giroud</p>
+      </div>
+      <div class="films">
+          <a href="https://wwv.wookafr.org/streaming/aventure/kali/">
+              <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/vN5g21wH8ptEknCMzl5G7ZWcVFe.jpg" alt="Mood">
+          </a>
+          <p>Kali</p>
+      </div>
+      <div class="films">
+          <a href="https://wwv.wookafr.org/streaming/aventure/godzilla-vs-kong/">
+              <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/4bTShLVFnVKK31cowgjdAIZV84T.jpg" alt="Mood">
+          </a>
+          <p>Godzilla vs. Kong</p>
+      </div>
+      <div class="films">
+          <a href="https://wwv.wookafr.org/streaming/science-fiction/the-last-wave-la-submersion-finale/">
+              <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/6HYeR9RoGJtOt1x8ArSYXooKhoB.jpg" alt="Mood">
+          </a>
+          <p>The last wave</p>
+      </div>
+      
+      <div class="films">
+          <a href="https://wwv.wookafr.org/streaming/comedie/les-profs/">
+              <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/59Bi4wtdoxXV9eaPat7em2ahISI.jpg" alt="Mood">
+          </a>
+          <p>Les Profs</p>
+      </div>
+      <div class="films">
+          <a href="https://wwv.wookafr.org/streaming/drame/sully/">
+              <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/zX5tAoJTcixdq1CjDTr9RrBIAWl.jpg" alt="Mood">
+          </a>
+          <p>Sully</p>
+      </div>
+      <div class="films">
+          <a href="https://wwv.wookafr.org/streaming/series/mood/">
+              <img src="https://wwv.wookafr.org/wp-content/uploads/2024/06/iK5JKGeC46cIyDzCDKsdZOH4Xt3.jpg" alt="Mood">
+          </a>
+          <p>Mood</p>
+      </div>
+      
+      <div class="films">
+          <a href="https://wwv.wookafr.org/streaming/series/les-enquetes-de-dan-sommerdahl/">
+              <img src="https://wwv.wookafr.org/wp-content/uploads/2024/06/8OWpc7Lck7gmgRhUG5KN7LjmH0Q.jpg" alt="Sommerdahl">
+          </a>
+          <p>Les enquêtes de Dan Sommerdahl</p>
+      </div>
+      
+      <div class="films">
+          <a href="https://wwv.wookafr.org/streaming/series/good-sam/">
+              <img src="https://wwv.wookafr.org/wp-content/uploads/2024/06/3daYD4eYimoQaPyKIgCADKUovcJ.jpg" alt="Good Sam">
+          </a>
+          <p>Good Sam</p>
+      </div>
+      
+      <div class="films">
+          <a href="https://wwv.wookafr.org/streaming/series/swagger/">
+              <img src="https://wwv.wookafr.org/wp-content/uploads/2024/06/nASkt8izgpR4toMYgiAnxfjWcE2.jpg" alt="Swagger">
+          </a>
+          <p>Swagger</p>
+      </div>
+      
+      <div class="films">
+          <a href="https://wwv.wookafr.org/streaming/series/les-nouveaux-bandits/">
+              <img src="https://wwv.wookafr.org/wp-content/uploads/2024/06/q91Y8bBo0GKWS1Goeu3SCRdprn7.jpg" alt="Les Nouveaux Bandis">
+          </a>
+          <p>Les Nouveaux Bandis</p>
+      </div>
+      
+      <div class="films">
+          <a href="https://wwv.wookafr.org/streaming/series/strange-planet/">
+              <img src="https://wwv.wookafr.org/wp-content/uploads/2024/06/vMFbSyWr7CWXhQqdvxhLUAk2ilK.jpg" alt="Strange Planet">
+          </a>
+          <p>Strange Planet</p>
+      </div>
+      
+      <div class="films">
+          <a href="https://wwv.wookafr.org/streaming/series/faux/">
+              <img src="https://wwv.wookafr.org/wp-content/uploads/2024/06/tP1CjJLbCEeGsz6Y3IkBScp2jXD.jpg" alt="Faux">
+          </a>
+          <p>Faux</p>
+      </div>
+      
+      <div class="films">
+          <a href="https://wwv.wookafr.org/streaming/series/poker-face/">
+              <img src="https://wwv.wookafr.org/wp-content/uploads/2024/06/8Xm5dyMQC9whMJKnGdFugUAW73C.jpg" alt="Poker Face">
+          </a>
+          <p>Poker Face</p>
+      </div>
+      
+      <div class="films">
+          <a href="https://wwv.wookafr.org/streaming/series/avengers-rassemblement/">
+              <img src="https://wwv.wookafr.org/wp-content/uploads/2024/06/rj23nZ8nfSUegMt9tMTqkZ7zSIE.jpg" alt="Avengers Rassemblement">
+          </a>
+          <p>Avengers Rassemblement</p>
+      </div>
+      
+      <div class="films">
+          <a href="https://wwv.wookafr.org/streaming/series/titanic/">
+              <img src="https://wwv.wookafr.org/wp-content/uploads/2024/06/aivkYWP73tsbfC4AUudYfbMHII2.jpg" alt="Titanic (série) et film">
+          </a>
+          <p>Titanic</p>
+      </div>
+      
+      <div class="films">
+          <a href="https://wwv.wookafr.org/streaming/series/fbi-promotion-2009/">
+              <img src="https://wwv.wookafr.org/wp-content/uploads/2024/06/zeIL0GZnToCRDYH04zxADtZRTTI.jpg" alt="FBI Promotion 2009">
+          </a>
+          <p>FBI Promotion 2009</p>
+      </div>
+      
+      <div class="films">
+          <a href="https://wwv.wookafr.org/streaming/series/aspergirl/">
+              <img src="https://wwv.wookafr.org/wp-content/uploads/2024/06/iLS0y9f9CMkwzsoC16k6otoMMXC.jpg" alt="Aspirgirl">
+          </a>
+          <p>Aspergirl</p>
+      </div>
+      
+      <div class="films">
+          <a href="https://wwv.wookafr.org/streaming/series/annika/">
+              <img src="https://wwv.wookafr.org/wp-content/uploads/2024/06/8jRoGLyOnTMyLhWajG0ye6KKw0h.jpg" alt="Annika">
+          </a>
+          <p>Annika</p>
+      </div>
+      
+      <div class="films">
+          <a href="https://wwv.wookafr.org/streaming/series/ralph-katie/">
+              <img src="https://wwv.wookafr.org/wp-content/uploads/2024/06/bvJk02bCJf76i1T3JugQWOd6nIb.jpg" alt="Ralph et Catie">
+          </a>
+          <p>Ralph &amp; Katie</p>
+      </div>
+      
+      <div class="films">
+          <a href="https://wwv.wookafr.org/streaming/histoire/un-destin-inattendu/">
+              <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/aFGdDhXjwzJ8dedkkHJCm01tRgG.jpg" alt="Le Prix du Destin">
+          </a>
+          <p>Un destin inattendu</p>
+      </div>
+      
+      <div class="films">
+          <a href="https://wwv.wookafr.org/streaming/series/les-freres-sun/">
+              <img src="https://wwv.wookafr.org/wp-content/uploads/2024/06/jvsuSaW6T9X4QrexWIWH5ooRbvY.jpg" alt="Les Frères Sun">
+          </a>
+          <p>Les Frères Sun</p>
+      </div>
+      
+      <div class="films">
+          <a href="https://wwv.wookafr.org/streaming/series/the-terminal-list/">
+              <img src="https://wwv.wookafr.org/wp-content/uploads/2024/06/1dRsDRj8tfvTbNyJDItdBLNVsO7.jpg" alt="Terminal List">
+          </a>
+          <p>Terminal List</p>
+      </div>
+      
+      <div class="films">
+          <a href="https://wwv.wookafr.org/streaming/series/alphonse/">
+              <img src="https://wwv.wookafr.org/wp-content/uploads/2024/06/68jWgFipSRPeJkJxzqO51gZ4KYc.jpg" alt="Alphonse">
+          </a>
+          <p>Alphonse</p>
+      </div>
+      
+      <div class="films">
+          <a href="https://wwv.wookafr.org/streaming/series/narvalo/">
+              <img src="https://wwv.wookafr.org/wp-content/uploads/2024/06/oCHrATrBHqDvmGrX7y8hwXEtb2T.jpg" alt="Narvalo">
+          </a>
+          <p>Narvalo</p>
+      </div>
+      
+      <div class="films">
+          <a href="https://wwv.wookafr.org/streaming/aventure/vice-versa-2/">
+              <img src="https://all.web.img.acsta.net/img/f5/4c/f54c3310f101fe8ae4bba9e566bca1b5.jpg" alt="Wall-e">
+          </a>
+          <p>Vise verca 2</p>
+      </div>
+      
+      <div class="films">
+          <a href="https://wwv.wookafr.org/streaming/series/star-wars-visions/">
+              <img src="https://wwv.wookafr.org/wp-content/uploads/2024/06/6NgLGcOHscy6yLXpKCQi4Mz1yVa.jpg" alt="Star Wars">
+          </a>
+          <p>Star Wars</p>
+      </div>
+      <div class="films">
+          <a href="https://wwv.wookafr.org/streaming/aventure/jurassic-world-le-monde-dapres/">
+              <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/eVY9MIFVTcgWi2OzevfXuEjKlrR.jpg" alt="Jurassic Park">
+          </a>
+          <p>Jurassic world</p>
+      </div>
+      <div class="films">
+          <a href="https://wwv.wookafr.org/streaming/mystere/five-nights-at-freddys/">
+              <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/tEY81I7lpiHaLJa7AZ3O4vWXmJo.jpg" alt="FNAF">
+          </a>
+          <p>FNAF</p>
+      </div>
+      <div class="films">
+          <a href="https://wwv.wookafr.org/streaming/comedie/le-pantheon-de-la-joie/">
+              <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/o6QsZirma0yR08CyqDYouUhCW77.jpg" alt="Black Panther">
+          </a>
+          <p>Le panthéon de la joie</p>
+      </div>
+      <div class="films">
+          <a href="https://wwv.wookafr.org/streaming/comedie/alibi-com-2/">
+              <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/9gteYoeW0wOvYHnnvXJpq0RiGV8.jpg" alt="Alibi 2">
+          </a>
+          <p>Alibi 2</p>
+      </div>
+      <div class="films">
+          <a href="https://wwv.wookafr.org/streaming/musique/taylor-swift-the-eras-tour/">
+              <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/jf3YO8hOqGHCupsREf5qymYq1n.jpg" alt="Taylor Swift">
+          </a>
+          <p>Taylor Swift</p>
+      </div>
+      <div class="films">
+          <a href="https://wwv.wookafr.org/streaming/drame/le-jeune-imam/">
+              <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/pQU5vhv2AcDkm68b6djr8JpSDxG.jpg" alt="Le Jeune Imam">
+          </a>
+          <p>Le Jeune Imam</p>
+      </div>
+      <div class="films">
+          <a href="https://wwv.wookafr.org/streaming/drame/batiment-5/">
+              <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/q0b163rtX1qc0TVPkONel42yOJQ.jpg" alt="Bâtiment 5">
+          </a>
+          <p>Bâtiment 5</p>
+      </div>
+      <div class="films">
+          <a href="https://wwv.wookafr.org/streaming/series/south-park/">
+              <img src="https://wwv.wookafr.org/wp-content/uploads/2024/02/xJnbMTrJ2fl1AXAKx34U4BPvOhs.jpg" alt="South Park">
+          </a>
+          <p>South Park</p>
+      </div>
+      <div class="films">
+          <a href="https://wwv.wookafr.org/streaming/aventure/le-regne-animal/">
+              <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/1gO4SWCdMW0ptIRLQ455Ia5emC.jpg" alt="Le Règne Animal">
+          </a>
+          <p>Le Règne Animal</p>
+      </div>
+      <div class="films">
+          <a href="https://wwv.wookafr.org/streaming/comedie/ca-tourne-a-seoul-cobweb/">
+              <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/83pBAkmVctaHdeI1GE2LB2n5zu4.jpg" alt="Ça Tourne à Séoul">
+          </a>
+          <p>Ça Tourne à Séoul</p>
+      </div>
+      <div class="films">
+          <a href="https://wwv.wookafr.org/streaming/drame/creed-iii/">
+              <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/hYQs5RPHiWctoYqvI8baHiIqdd8.jpg" alt="CREED 3">
+          </a>
+          <p>CREED 3</p>
+      </div>
+      <div class="films">
+          <a href="https://wwv.wookafr.org/streaming/aventure/les-inseparables/">
+              <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/khdX89KDDGIhbxJuAGTmeo9bJZn.jpg" alt="Les Inséparables">
+          </a>
+          <p>Les Inséparables</p>
+      </div>
+      <div class="films">
+          <a href="https://wwv.wookafr.org/streaming/aventure/les-aventures-de-ricky/">
+              <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/6fblVw9BUvXmr62bvoMek8zKXEN.jpg" alt="Les Aventures de Rickis">
+          </a>
+          <p>Les Aventures de Rickis</p>
+      </div>
+      <div class="films">
+          <a href="https://wwv.wookafr.org/streaming/thriller/freestyle/">
+              <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/frvpF7wyXVxb78wp39c3bSSRslp.jpg" alt="Freestyle">
+          </a>
+          <p>Freestyle</p>
+      </div>
+      <div class="films">
+          <a href="https://wwv.wookafr.org/streaming/drame/banlieusards-2/">
+              <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/wxTzaXQudAnSTZgct3dPi2K8tt0.jpg" alt="Banlieusards 2">
+          </a>
+          <p>Banlieusards 2</p>
+      </div>
+      <div class="films">
+          <a href="https://wwv.wookafr.org/streaming/aventure/the-moon/">
+              <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/sZNwZv9YFMuChRxN5IdzcHqF5r.jpg" alt="The Moon">
+          </a>
+          <p>The Moon</p>
+      </div>
+      <div class="films">
+          <a href="https://wwv.wookafr.org/streaming/drame/ferrari/">
+              <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/xBFyJHvXCTgf9Vmq5uCnXRHrMQ4.jpg" alt="Ferrari">
+          </a>
+          <p>Ferrari</p>
+      </div>
+      <div class="films">
+          <a href="https://wwv.wookafr.org/streaming/comedie/10-jours-encore-sans-maman/">
+              <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/wy86JT2aVsIL1uuBKZp6Exz6pkH.jpg" alt="10 Jours Encore Sans Maman">
+          </a>
+          <p>10 Jours Encore Sans Maman</p>
+      </div>
+      <div class="films">
+          <a href="https://wwv.wookafr.org/streaming/familial/my-first-barbie-happy-dreamday/">
+              <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/zUGDo9luTIyiVfPVEmKGa55pIJa.jpg" alt="Barbie">
+          </a>
+          <p>Barbie</p>
+      </div>
+      <div class="films">
+          <a href="https://wwv.wookafr.org/streaming/familial/leo/">
+              <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/gSOVog7ydsaF1YpgAqBqnKYFGY.jpg" alt="Leo">
+          </a>
+          <p>Leo</p>
+      </div>
+      <div class="films">
+          <a href="https://wwv.wookafr.org/streaming/series/ma-famille-dabord/">
+              <img src="https://wwv.wookafr.org/wp-content/uploads/2024/04/9xIwhzgBoTejiN1zv9VRHUKkpBt.jpg">
+          </a>
+          <p> Ma famille d'abord</p>
+      </div>
+      
+      <div class="films">
+          <a href="https://wwv.wookafr.org/streaming/series/la-chronique-des-bridgerton/">
+              <img src="https://wwv.wookafr.org/wp-content/uploads/2024/02/hiEIKOkaP1PcWUeqjWeKr8eWF1Q.jpg" alt="Wall-e">
+          </a>
+          <p>La Chronique des Bridgerton</p>
+      </div>
+      <div class="films">
+          <a href="https://wwv.wookafr.org/streaming/series/lete-ou-je-suis-devenue-jolie/">
+              <img src="https://wwv.wookafr.org/wp-content/uploads/2023/12/1UjOeSZHunQqpSimmobGCWzkuXh.jpg" alt="Wall-e">
+          </a>
+          <p>L'été ou je suis devenue jolie</p>
+      </div>
+      <div class="films">
+          <a href="https://wwv.wookafr.org/streaming/comedie/a-travers-ma-fenetre-3-les-yeux-dans-les-yeux/">
+              <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/maJNyAG2WLHfoigbYZsGznK7KSM.jpg" alt="Wall-e">
+          </a>
+          <p>A travers ma fenêtre</p>
+      </div>
+      <div class="films">
+          <a href="https://wwv.wookafr.org/streaming/comedie/dans-5-ans/">
+              <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/2rtKG9U5EpEMfnUavxIg9Oy7pxe.jpg" alt="Wall-e">
+          </a>
+          <p>Dans 5 ans</p>
+      </div>
+      <div class="films">
+          <a href="https://wwv.wookafr.org/streaming/romance/fabricant-de-larmes/">
+              <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/7V86p8WeR9VrT32g7jpkJOiC43f.jpg" alt="Wall-e">
+          </a>
+          <p>Fabricant De Larmes</p>
+      </div>
+      <div class="films">
+          <a href="https://wwv.wookafr.org/streaming/series/modern-family/">
+              <img src="https://wwv.wookafr.org/wp-content/uploads/2024/06/klL4yhwiU8aF4AuF5dCfJA9sRnS.jpg" alt="Wall-e">
+          </a>
+          <p>Modern Familly</p>
+      </div>
+      <div class="films">
+          <a href="https://www.tokyvideo.com/fr/video/30-jours-max">
+              <img src="https://fr.web.img4.acsta.net/pictures/22/06/20/12/57/5321484.jpg" alt="Wall-e">
+          </a>
+          <p>Liaisons dangeureuses</p>
+      </div>
+      <div class="films">
+          <a href="https://www.tokyvideo.com/fr/video/30-jours-max">
+              <img src="https://images.justwatch.com/poster/243461957/s592/30-jours-max" alt="Wall-e">
+          </a>
+          <p>30 jours max</p>
+      </div>
+      <div class="films">
+          <a href="https://wwv.wookafr.org/streaming/series/mes-premieres-fois/">
+              <img src="https://wwv.wookafr.org/wp-content/uploads/2024/05/yPYqq80Sq7nFOtyTc3PT6o983kG.jpg" alt="Wall-e">
+          </a>
+          <p>Mes premières fois</p>
+      </div>
+      <div class="films">
+          <a href="https://wwv.wookafr.org/streaming/series/outer-banks/">
+              <img src="https://wwv.wookafr.org/wp-content/uploads/2024/05/ovDgO2LPfwdVRfvScAqo9aMiIW.jpg" alt="Wall-e">
+          </a>
+          <p>Outher Banks</p>
+      </div>
+      <div class="films">
+          <a href="https://wwv.wookafr.org/streaming/aventure/transformers-rise-of-the-beasts/">
+              <img src="https://fr.web.img2.acsta.net/pictures/23/04/27/15/59/2127095.jpg" alt="Wall-e">
+          </a>
+          <p>Les Transformers</p>
+      </div>
+      <div class="films">
+          <a href="https://wwv.wookafr.org/streaming/mystere/smile-cetait-ecrit/">
+              <img src="https://fr.web.img2.acsta.net/pictures/22/09/29/08/42/5363876.jpg" alt="Wall-e">
+          </a>
+          <p>Smile</p>
+      </div>
+      <div class="films">
+          <a href="https://wwv.wookafr.org/streaming/thriller/sous-la-seine/">
+              <img src="https://fr.web.img6.acsta.net/img/63/9a/639a5ebe313496018137c91152b1b914.jpg" alt="Parasite">
+          </a>
+          <p>Sous la seine</p>
+      </div>
+      <div class="films">
+          <a href="https://wwv.wookafr.org/streaming/episodes/squeezie-merci-internet-saison-1-episode-1/">
+              <img src="https://wwv.wookafr.org/wp-content/uploads/2024/02/3xnUUWDVml9vDUtxci3pxbfWfep.jpg" alt="Interstellar">
+          </a>
+          <p>Squeezie : Merci Internet</p>
+      </div>
+      <div class="films">
+          <a href="https://wwv.wookafr.org/streaming/comedie/la-la-land/">
+              <img src="https://fr.web.img4.acsta.net/pictures/16/11/10/13/52/169386.jpg" alt="La La Land">
+          </a>
+          <p>La La Land</p>
+      </div>
+      <div class="films">
+          <a href="https://wwv.wookafr.org/streaming/aventure/fast-furious-9/">
+              <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/5Ww3aXmfmcFPDIbuTX3gQbtueoG.jpg" alt="Forrest Gump">
+          </a>
+          <p>Fst and furious</p>
+      </div>
+      <div class="films">
+          <a href="https://wwv.wookafr.org/streaming/familial/le-retour-des-thunderman/">
+              <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/p4HOnQETJNCrSAQvvjvx6rGAHeV.jpg" alt="Amélie">
+          </a>
+          <p> Le Retour Des Thunderman</p>
+      </div>
+      <div class="films">
+          <a href="https://wwv.wookafr.org/streaming/romance/a-contre-sens/">
+              <img src="https://fr.web.img2.acsta.net/pictures/23/04/05/17/17/4725967.jpg" alt="Wall-e">
+          </a>
+          <p>A Contre Sens</p>
+      </div>
+      <div class="films">
+          <a href="https://ok.ru/video/948520159851">
+              <img src="https://cinemasdaujourdhui.com/wp-content/uploads/2021/05/w7JcXBC2azUOvcxPJXSb4PYk1jX-scaled.jpg" alt="Wall-e">
+          </a>
+          <p>Bienvenue à Gatacca</p>
+      </div>
+      <div class="films">
+          <a href="https://www.tokyvideo.com/fr/video/oppenheimer-vf">
+              <img src="https://i.ebayimg.com/images/g/EZAAAOSwc7Rke23F/s-l1200.webp" alt="Wall-e">
+          </a>
+          <p>Openheimer</p>
+      </div>
+      <div class="films">
+          <a href="https://www.dailymotion.com/video/x7sbopk">
+              <img src="https://fr.web.img2.acsta.net/pictures/19/12/24/11/26/5091620.jpg" alt="Wall-e">
+          </a>
+          <p>10 jours sans maman</p>
+      </div>
+      <div class="films">
+          <a href="https://www.tokyvideo.com/fr/video/bad-boy-wawacity-ec">
+              <img src="https://fr.web.img6.acsta.net/pictures/19/11/22/09/44/3027567.jpg" alt="Wall-e">
+          </a>
+          <p>Bad boy</p>
+      </div>
+      <div class="films">
+          <a href="https://www.tokyvideo.com/fr/video/le-diner-de-cons-1998">
+              <img src="https://fr.web.img6.acsta.net/medias/nmedia/18/36/10/96/19649758.jpg" alt="Wall-e">
+          </a>
+          <p>Le diner de cons</p>
+      </div>
+      <div class="films">
+          <a href="https://www.tokyvideo.com/fr/video/la-grande-vadrouille">
+              <img src="https://fr.web.img5.acsta.net/pictures/16/06/16/12/01/072037.jpg" alt="Wall-e">
+          </a>
+          <p>La grande vadrouille</p>
+      </div>
+      <div class="films premium">
+          <a href="https://www.tokyvideo.com/video/drive-2011-fr" class="film-link" data-url="https://www.tokyvideo.com/video/drive-2011-fr">
+              <img src="https://nightofthelivingtrev.wordpress.com/wp-content/uploads/2011/12/drive-poster.jpg" alt="Drive">
+              <img src="premium.png" alt="Premium" class="premium-icon">
+          </a>
+          <p>Drive</p>
+          <a href="abonnement.html">Acheter l'abonnement</a>
+      </div>
+      <div class="films">
+          <a href="https://www.tokyvideo.com/fr/video/l-aile-ou-la-cuisse-de-funes-1h41-avi">
+              <img src="https://fr.web.img4.acsta.net/medias/nmedia/18/36/37/32/18478100.jpg" alt="Wall-e">
+          </a>
+          <p>L'aile ou la cuisse</p>
+      </div>
+      <div class="films">
+          <a href="https://wwv.wookafr.org/streaming/aventure/le-royaume-des-chats/">
+              <img src="https://m.media-amazon.com/images/I/81fEIMzIzwS._AC_UF1000,1000_QL80_.jpg" alt="Wall-e">
+          </a>
+          <p>Le royaume des chats</p>
+      </div>
+      <div class="films">
+          <a href="https://www.tokyvideo.com/fr/video/le-grand-bleu-vf">
+              <img src="https://medias.boutique.lab.arte.tv/prod/76145_vod_thumb_362973-hd@2x.jpg" alt="Wall-e">
+          </a>
+          <p>Le grand bleu</p>
+      </div>
+      <div class="films">
+          <a href="https://www.tokyvideo.com/fr/video/la-ligne-verte-vf">
+              <img src="https://fr.web.img4.acsta.net/medias/nmedia/18/66/15/78/19254683.jpg" alt="Wall-e">
+          </a>
+          <p>La ligne verte</p>
+      </div>
+      <div class="films">
+          <a href="https://www.tokyvideo.com/fr/video/le-parrain-vf">
+              <img src="https://fusion.molotov.tv/arts/i/446x588/Ch8SHQoUMnDPjiXNZwINrcvQ30-kZUjYI1ASA2pwZxgB/jpg" alt="Wall-e">
+          </a>
+          <p>Le parrain</p>
+      </div>
+      <div class="films">
+          <a href="https://www.tokyvideo.com/fr/video/veuillez-nous-excuser-pour-la-gene-occasionnee-vf">
+              <img src="https://images.justwatch.com/poster/305939182/s718/veuillez-nous-excuser-pour-la-gene-occasionnee.jpg" alt="Wall-e">
+          </a>
+          <p>Veuillez nous excuser pour la gène occasionée</p>
+      </div>
+      <div class="films">
+          <a href="https://films.wookafr.org/streaming/episodes/mercredi-saison-1-episode-1/">
+              <img src="https://poster-manga.fr/3370-large_default/poster-wednesday-addams-affiche-ou-cadre.jpg" alt="Wall-e">
+          </a>
+          <p>Mercredi Adams</p>
+      </div>
+      <div class="films">
+          <a href="baby sitting.html">
+              <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/3808DYuvuLQWutJPX2KwuB7sxnn.jpg" alt="Wall-e">
+          </a>
+          <p>Baby sitting</p>
+      </div>
+      <div class="films">
+          <a href="https://www.justwatch.com/fr/serie/mh370-lavion-disparu">
+              <img src="https://images.justwatch.com/poster/303966091/s332/saison-1" alt="Wall-e">
+          </a>
+          <p>MH370 L'avion disparue</p>
+      </div>
+      <div class="films">
+          <a href="https://films.wookafr.org/streaming/familial/bienvenue-chez-les-casagrandes-le-film/">
+              <img src="https://fr.web.img2.acsta.net/pictures/19/10/04/06/20/5907293.jpg" alt="Wall-e">
+          </a>
+          <p>Bienvenue chez les Casagrandes</p>
+      </div>
+      <div class="films">
+          <a href="https://films.wookafr.org/streaming/fantastique/elementaire/">
+              <img src="https://fr.web.img2.acsta.net/pictures/23/06/07/14/09/5709179.jpg" alt="Wall-e">
+          </a>
+          <p>Elemantaire</p>
+      </div>
+      <div class="films">
+          <a href="https://films.wookafr.org/streaming/fantastique/le-sens-de-la-famille/">
+              <img src="https://fr.web.img6.acsta.net/pictures/21/03/26/10/00/0733728.jpg" alt="Wall-e">
+          </a>
+          <p>Le sens de la famille</p>
+      </div>
+      <div class="films">
+          <a href="les croods.html">
+              <img src="https://fr.web.img4.acsta.net/medias/nmedia/18/95/10/55/20502139.jpg" alt="Wall-e">
+          </a>
+          <p>Les croods</p>
+      </div>
+      <div class="films">
+          <a href="https://films.wookafr.org/streaming/drame/bob-marley-one-love/">
+              <img src="https://m.media-amazon.com/images/M/MV5BY2U4M2NmY2ItMjAyNC00NzM1LTg3ZTEtNzVlYjEzNTE5NDI5XkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_.jpg" alt="Wall-e">
+          </a>
+          <p>Bob marley one love</p>
+      </div>
+  
 
-.popup {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    color: white;
-    border: white;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-}
+  <!-- Ajoutez d'autres films ici de manière similaire -->
 
-.popup-content {
-    background-color: rgb(0, 0, 0);
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    position: relative;
-    width: 80%;
-    max-width: 500px;
-}
+  <script>
+      const correctCode = "anp23HGB3ghl08Hgdjshjhdsds";
 
-.close-btn {
-    background-color: #ff3131; /* Bleu ciel */
-    border: none;
-    color: white;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin-top: 20px;
-    border-radius: 5px;
-    cursor: pointer;
-}
+      document.querySelectorAll('.film-link').forEach(link => {
+          link.addEventListener('click', function(event) {
+              event.preventDefault();
+              const userCode = prompt("Veuillez entrer le code premium :");
 
-.close-btn:hover {
-    background-color: #bc0202;
-}
+              if (userCode === correctCode) {
+                  window.location.href = this.getAttribute('data-url');
+              } else {
+                  alert("Code incorrect. Veuillez réessayer.");
+              }
+          });
+      });
 
-.title {
-    font-size: 2em;
-    color: red;
-    margin-bottom: 10px;
-}
+      function search() {
+          var input, filter, divs, a, txtValue;
+          input = document.getElementById('searchInput');
+          filter = input.value.toUpperCase();
+          divs = document.getElementsByTagName('div');
 
-.title .blue {
-    color: blue;
-}
+          for (var i = 0; i < divs.length; i++) {
+              a = divs[i].getElementsByTagName('a')[0];
+              txtValue = a.getAttribute('href');
 
-.title .white {
-    color: white;
-}
-
-.title .red {
-    color: red;
-}
-
-.message {
-    font-size: 1.2em;
-    color: #ffffff;
-}
-
-.message::first-letter {
-    font-size: 50px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.logo {
-    width: 100px;
-    height: auto;
-    margin-bottom: 20px;
-}
-
-.flag img {
-    width: 20px;
-    height: 20px;
-    border-radius: 20px;
-    vertical-align: middle;
-    margin-right: 5px;
-}
-
-span.close-btn {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 24px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-        </style>
-    </div>
-    <script src="script.js"></script>
-         <div class="films">
-        <a href="https://www.6play.fr/m6/direct">
-            <img src="https://actu.6play.fr/wp-content/uploads/2024/07/espagne-angleterre-finale-euro-2024.jpg" alt="Mood">
-        </a>
-        <p>English Or spanish?</p>
-    </div>
-    <div class="films">
-        <a href="https://vww.wookafr.org/streaming/series/surviving-summer/">
-            <img src="https://vww.wookafr.org/wp-content/uploads/2024/04/zJTi8sM9fvpYhZmxysVQnG4OFM9.jpg" alt="Mood">
-        </a>
-        <p>Surviving Summer</p>
-    </div>
-        <div class="films">
-            <a href="https://www.tokyvideo.com/fr/video/nos-jours-heureux-2006-vf">
-                <img src="https://fr.web.img2.acsta.net/medias/nmedia/18/36/08/25/18643047.jpg" alt="Mood">
-            </a>
-            <p>Nos jours heureux</p>
-        </div>
-        <div class="films">
-            <a href="https://wwv.wookafr.org/streaming/comedie/les-bronzes-3-amis-pour-la-vie/">
-                <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/9g7z9WG6MS3Q8cYfxTTBC4Ckm9A.jpg" alt="Mood">
-            </a>
-            <p>Les Bronzés 3 : Amis pour la vie</p>
-        </div>
-        <div class="films">
-            <a href="https://wwv.wookafr.org/streaming/comedie/les-bodins-chez-les-belges/">
-                <img src="https://fusion.molotov.tv/arts/i/446x588/Ch8SHQoUw0Jit6guEUVbaVATLi9yptr4FM8SA2pwZxgB/jpg" alt="Mood">
-            </a>
-            <p>Les bodins Chez les belges</p>
-        </div>
-        <div class="films">
-            <a href="https://wwv.wookafr.org/streaming/comedie/crush/">
-                <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/hayr56csDzCSADaejgrRMVPHyDy.jpg" alt="Mood">
-            </a>
-            <p>Crush</p>
-        </div>
-        <div class="films">
-            <a href="https://wwv.wookafr.org/streaming/drame/sur-la-terre-comme-au-ciel/">
-                <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/nBPbYM9ESNkPPXKcMMouIAz9rLy.jpg" alt="Mood">
-            </a>
-            <p>Sur la terre comme au ciel</p>
-        </div>
-        <div class="films">
-            <a href="https://wwv.wookafr.org/streaming/aventure/ferdinand/">
-                <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/il0QVflMD6TWKWygCVxSEZpfSgc.jpg" alt="Mood">
-            </a>
-            <p>Ferdinand</p>
-        </div>
-        <div class="films">
-            <a href="https://wwv.wookafr.org/streaming/comedie/the-boyfriend-pourquoi-lui/">
-                <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/1hWeSAsb1zTSI0Nng1vlsb7lF5Q.jpg" alt="Mood">
-            </a>
-            <p>The Boyfriend : Pourquoi lui ?</p>
-        </div>
-        <div class="films">
-            <a href="https://wwv.wookafr.org/streaming/thriller/la-chute-de-londres/">
-                <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/vuyOsftz7FrhVhHyMv7MNh6qLsH.jpg" alt="Mood">
-            </a>
-            <p>La chute de Londres</p>
-        </div>
-        <div class="films">
-            <a href="https://wwv.wookafr.org/streaming/drame/charm-city-kings/">
-                <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/9qp3fOzlUImJevdCJbAfl9A6yFI.jpg" alt="Mood">
-            </a>
-            <p>Baltimore</p>
-        </div>
-        <div class="films">
-            <a href="https://wwv.wookafr.org/streaming/crime/jamesy-boy/">
-                <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/fJCMNxUnYfOmej5FhXSOeMX2jSD.jpg" alt="Mood">
-            </a>
-            <p>James boy</p>
-        </div>
-        <div class="films">
-            <a href="https://wwv.wookafr.org/streaming/action/revenge/">
-                <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/a1wuUTjXvWhBYuVT21BPZ31YAB2.jpg" alt="Mood">
-            </a>
-            <p>Revenge</p>
-        </div>
-        <div class="films">
-            <a href="https://wwv.wookafr.org/streaming/drame/inchallah-un-fils/">
-                <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/krPPZk4Yr6KNpHX7yugxyGregH5.jpg" alt="Mood">
-            </a>
-            <p>Ich'allah un fils</p>
-        </div>
-        <div class="films">
-            <a href="https://wwv.wookafr.org/streaming/aventure/alvin-et-les-chipmunks-4-a-fond-la-caisse/">
-                <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/55WD5MrA7wuKluiF57ZbH64QfIL.jpg" alt="Mood">
-            </a>
-            <p>Alvin et les chimpmunks</p>
-        </div>
-        <div class="films">
-            <a href="https://wwv.wookafr.org/streaming/familial/safety/">
-                <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/x1VALfs1GJyCkLWG7YutqJ96srZ.jpg" alt="Mood">
-            </a>
-            <p>Safety</p>
-        </div>
-        <div class="films">
-            <a href="https://wwv.wookafr.org/streaming/aventure/lage-de-glace-4-la-derive-des-continents/">
-                <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/3M3ueeQA5rj0mHOOHnMoQatiZJh.jpg" alt="Mood">
-            </a>
-            <p>L'age de glace 4</p>
-        </div>
-        <div class="films">
-            <a href="https://wwv.wookafr.org/streaming/series/school-spirits/">
-                <img src="https://wwv.wookafr.org/wp-content/uploads/2024/05/eb7ZJYZjed1bBQ8a4aMDwp5nvjF.jpg" alt="Mood">
-            </a>
-            <p>School Spirits</p>
-        </div>
-        <div class="films">
-            <a href="https://wwv.wookafr.org/streaming/familial/my-spy/">
-                <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/55LLHeLTTkZkb3C4gTu1ELiuwK4.jpg" alt="Mood">
-            </a>
-            <p>My Spy</p>
-        </div>
-        <div class="films">
-            <a href="https://wwv.wookafr.org/streaming/aventure/les-incognitos/">
-                <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/aWWvMSVwUjKhrMusELcBH8FymnW.jpg" alt="Mood">
-            </a>
-            <p>Les incognitos</p>
-        </div>
-        <div class="films">
-            <a href="https://wwv.wookafr.org/streaming/drame/la-couleur-de-la-victoire/">
-                <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/xDSQGTR0pGelCXrb0QmgKAxj9qw.jpg" alt="Mood">
-            </a>
-            <p>La couleur de la victoire</p>
-        </div>
-        <div class="films">
-            <a href="https://wwv.wookafr.org/streaming/aventure/zootopie/">
-                <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/xEx4dHi2IrTB0vkVPccrGrMcZQW.jpg" alt="Mood">
-            </a>
-            <p>Zootopie</p>
-        </div>
-        <div class="films">
-            <a href="https://wwv.wookafr.org/streaming/fantastique/blue-compagnie/">
-                <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/iPMtq2aSKM1i8rCOCEpgtVQZBmO.jpg" alt="Mood">
-            </a>
-            <p>Blue &amp; Compagnie</p>
-        </div>
-        <div class="films">
-            <a href="https://wwv.wookafr.org/streaming/crime/ride/">
-                <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/iz4HyLI79FRDVNx3uj2B3dx7VTL.jpg" alt="Mood">
-            </a>
-            <p>Ride</p>
-        </div>
-        <div class="films">
-            <a href="https://wwv.wookafr.org/streaming/comedie/love-coach-malgre-moi/">
-                <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/nmAfJBzO05Jt87FPlV3oSBbPXwM.jpg" alt="Mood">
-            </a>
-            <p>Love coach</p>
-        </div>
-        <div class="films">
-            <a href="https://wwv.wookafr.org/streaming/comedie/manuel-de-survie-a-lapocalypse-zombie/">
-                <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/uG7tiTvfAWPi7oXhXoUuG8vJBnr.jpg" alt="Mood">
-            </a>
-            <p>Scouts VS Zombies</p>
-        </div>
-        <div class="films">
-            <a href="https://wwv.wookafr.org/streaming/thriller/dans-la-brume/">
-                <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/3OzWENKDOrJCeT2GTjWE8NOkbrZ.jpg" alt="Mood">
-            </a>
-            <p>Dans la brume</p>
-        </div>
-        <div class="films">
-            <a href="https://wwv.wookafr.org/streaming/comedie/maison-de-retraite-2/">
-                <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/kulQJnYektZnP3yXsdXkWZnpinM.jpg" alt="Mood">
-            </a>
-            <p>Maison de retraite 2</p>
-        </div>
-        <div class="films">
-            <a href="https://wwv.wookafr.org/streaming/comedie/fastlife/">
-                <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/AdzW7z9L1lKhVQ2uIESImGFaAWo.jpg" alt="Mood">
-            </a>
-            <p>Fastlife</p>
-        </div>
-        <div class="films">
-            <a href="https://wwv.wookafr.org/streaming/thriller/limitless/">
-                <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/dG2dsBiy11m7zHSdwlWymvIjOK.jpgg" alt="Mood">
-            </a>
-            <p>Limitless</p>
-        </div>
-        <div class="films">
-            <a href="https://wwv.wookafr.org/streaming/thriller/bad-boys-ride-or-die/">
-                <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/mCAIYEtOajcdaJPEHGUUo63vurC.jpg" alt="Mood">
-            </a>
-            <p>Bad Boys: Ride or Die</p>
-        </div>
-        <div class="films">
-            <a href="https://wwv.wookafr.org/streaming/comedie/az-exister/">
-                <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/hvA86X4K5ipGZrvsM1NlgRMYYFp.jpg" alt="Mood">
-            </a>
-            <p>Az – Exister</p>
-        </div>
-        <div class="films">
-            <a href="https://wwv.wookafr.org/streaming/documentaire/giroud/">
-                <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/jyf0imOWGDBya1E6bJS9EHJsIOz.jpg" alt="Mood">
-            </a>
-            <p>Giroud</p>
-        </div>
-        <div class="films">
-            <a href="https://wwv.wookafr.org/streaming/aventure/kali/">
-                <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/vN5g21wH8ptEknCMzl5G7ZWcVFe.jpg" alt="Mood">
-            </a>
-            <p>Kali</p>
-        </div>
-        <div class="films">
-            <a href="https://wwv.wookafr.org/streaming/aventure/godzilla-vs-kong/">
-                <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/4bTShLVFnVKK31cowgjdAIZV84T.jpg" alt="Mood">
-            </a>
-            <p>Godzilla vs. Kong</p>
-        </div>
-        <div class="films">
-            <a href="https://wwv.wookafr.org/streaming/science-fiction/the-last-wave-la-submersion-finale/">
-                <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/6HYeR9RoGJtOt1x8ArSYXooKhoB.jpg" alt="Mood">
-            </a>
-            <p>The last wave</p>
-        </div>
-        
-        <div class="films">
-            <a href="https://wwv.wookafr.org/streaming/comedie/les-profs/">
-                <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/59Bi4wtdoxXV9eaPat7em2ahISI.jpg" alt="Mood">
-            </a>
-            <p>Les Profs</p>
-        </div>
-        <div class="films">
-            <a href="https://wwv.wookafr.org/streaming/drame/sully/">
-                <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/zX5tAoJTcixdq1CjDTr9RrBIAWl.jpg" alt="Mood">
-            </a>
-            <p>Sully</p>
-        </div>
-        <div class="films">
-            <a href="https://wwv.wookafr.org/streaming/series/mood/">
-                <img src="https://wwv.wookafr.org/wp-content/uploads/2024/06/iK5JKGeC46cIyDzCDKsdZOH4Xt3.jpg" alt="Mood">
-            </a>
-            <p>Mood</p>
-        </div>
-        
-        <div class="films">
-            <a href="https://wwv.wookafr.org/streaming/series/les-enquetes-de-dan-sommerdahl/">
-                <img src="https://wwv.wookafr.org/wp-content/uploads/2024/06/8OWpc7Lck7gmgRhUG5KN7LjmH0Q.jpg" alt="Sommerdahl">
-            </a>
-            <p>Les enquêtes de Dan Sommerdahl</p>
-        </div>
-        
-        <div class="films">
-            <a href="https://wwv.wookafr.org/streaming/series/good-sam/">
-                <img src="https://wwv.wookafr.org/wp-content/uploads/2024/06/3daYD4eYimoQaPyKIgCADKUovcJ.jpg" alt="Good Sam">
-            </a>
-            <p>Good Sam</p>
-        </div>
-        
-        <div class="films">
-            <a href="https://wwv.wookafr.org/streaming/series/swagger/">
-                <img src="https://wwv.wookafr.org/wp-content/uploads/2024/06/nASkt8izgpR4toMYgiAnxfjWcE2.jpg" alt="Swagger">
-            </a>
-            <p>Swagger</p>
-        </div>
-        
-        <div class="films">
-            <a href="https://wwv.wookafr.org/streaming/series/les-nouveaux-bandits/">
-                <img src="https://wwv.wookafr.org/wp-content/uploads/2024/06/q91Y8bBo0GKWS1Goeu3SCRdprn7.jpg" alt="Les Nouveaux Bandis">
-            </a>
-            <p>Les Nouveaux Bandis</p>
-        </div>
-        
-        <div class="films">
-            <a href="https://wwv.wookafr.org/streaming/series/strange-planet/">
-                <img src="https://wwv.wookafr.org/wp-content/uploads/2024/06/vMFbSyWr7CWXhQqdvxhLUAk2ilK.jpg" alt="Strange Planet">
-            </a>
-            <p>Strange Planet</p>
-        </div>
-        
-        <div class="films">
-            <a href="https://wwv.wookafr.org/streaming/series/faux/">
-                <img src="https://wwv.wookafr.org/wp-content/uploads/2024/06/tP1CjJLbCEeGsz6Y3IkBScp2jXD.jpg" alt="Faux">
-            </a>
-            <p>Faux</p>
-        </div>
-        
-        <div class="films">
-            <a href="https://wwv.wookafr.org/streaming/series/poker-face/">
-                <img src="https://wwv.wookafr.org/wp-content/uploads/2024/06/8Xm5dyMQC9whMJKnGdFugUAW73C.jpg" alt="Poker Face">
-            </a>
-            <p>Poker Face</p>
-        </div>
-        
-        <div class="films">
-            <a href="https://wwv.wookafr.org/streaming/series/avengers-rassemblement/">
-                <img src="https://wwv.wookafr.org/wp-content/uploads/2024/06/rj23nZ8nfSUegMt9tMTqkZ7zSIE.jpg" alt="Avengers Rassemblement">
-            </a>
-            <p>Avengers Rassemblement</p>
-        </div>
-        
-        <div class="films">
-            <a href="https://wwv.wookafr.org/streaming/series/titanic/">
-                <img src="https://wwv.wookafr.org/wp-content/uploads/2024/06/aivkYWP73tsbfC4AUudYfbMHII2.jpg" alt="Titanic (série) et film">
-            </a>
-            <p>Titanic</p>
-        </div>
-        
-        <div class="films">
-            <a href="https://wwv.wookafr.org/streaming/series/fbi-promotion-2009/">
-                <img src="https://wwv.wookafr.org/wp-content/uploads/2024/06/zeIL0GZnToCRDYH04zxADtZRTTI.jpg" alt="FBI Promotion 2009">
-            </a>
-            <p>FBI Promotion 2009</p>
-        </div>
-        
-        <div class="films">
-            <a href="https://wwv.wookafr.org/streaming/series/aspergirl/">
-                <img src="https://wwv.wookafr.org/wp-content/uploads/2024/06/iLS0y9f9CMkwzsoC16k6otoMMXC.jpg" alt="Aspirgirl">
-            </a>
-            <p>Aspergirl</p>
-        </div>
-        
-        <div class="films">
-            <a href="https://wwv.wookafr.org/streaming/series/annika/">
-                <img src="https://wwv.wookafr.org/wp-content/uploads/2024/06/8jRoGLyOnTMyLhWajG0ye6KKw0h.jpg" alt="Annika">
-            </a>
-            <p>Annika</p>
-        </div>
-        
-        <div class="films">
-            <a href="https://wwv.wookafr.org/streaming/series/ralph-katie/">
-                <img src="https://wwv.wookafr.org/wp-content/uploads/2024/06/bvJk02bCJf76i1T3JugQWOd6nIb.jpg" alt="Ralph et Catie">
-            </a>
-            <p>Ralph &amp; Katie</p>
-        </div>
-        
-        <div class="films">
-            <a href="https://wwv.wookafr.org/streaming/histoire/un-destin-inattendu/">
-                <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/aFGdDhXjwzJ8dedkkHJCm01tRgG.jpg" alt="Le Prix du Destin">
-            </a>
-            <p>Un destin inattendu</p>
-        </div>
-        
-        <div class="films">
-            <a href="https://wwv.wookafr.org/streaming/series/les-freres-sun/">
-                <img src="https://wwv.wookafr.org/wp-content/uploads/2024/06/jvsuSaW6T9X4QrexWIWH5ooRbvY.jpg" alt="Les Frères Sun">
-            </a>
-            <p>Les Frères Sun</p>
-        </div>
-        
-        <div class="films">
-            <a href="https://wwv.wookafr.org/streaming/series/the-terminal-list/">
-                <img src="https://wwv.wookafr.org/wp-content/uploads/2024/06/1dRsDRj8tfvTbNyJDItdBLNVsO7.jpg" alt="Terminal List">
-            </a>
-            <p>Terminal List</p>
-        </div>
-        
-        <div class="films">
-            <a href="https://wwv.wookafr.org/streaming/series/alphonse/">
-                <img src="https://wwv.wookafr.org/wp-content/uploads/2024/06/68jWgFipSRPeJkJxzqO51gZ4KYc.jpg" alt="Alphonse">
-            </a>
-            <p>Alphonse</p>
-        </div>
-        
-        <div class="films">
-            <a href="https://wwv.wookafr.org/streaming/series/narvalo/">
-                <img src="https://wwv.wookafr.org/wp-content/uploads/2024/06/oCHrATrBHqDvmGrX7y8hwXEtb2T.jpg" alt="Narvalo">
-            </a>
-            <p>Narvalo</p>
-        </div>
-        
-        <div class="films">
-            <a href="https://wwv.wookafr.org/streaming/aventure/vice-versa-2/">
-                <img src="https://all.web.img.acsta.net/img/f5/4c/f54c3310f101fe8ae4bba9e566bca1b5.jpg" alt="Wall-e">
-            </a>
-            <p>Vise verca 2</p>
-        </div>
-        
-        <div class="films">
-            <a href="https://wwv.wookafr.org/streaming/series/star-wars-visions/">
-                <img src="https://wwv.wookafr.org/wp-content/uploads/2024/06/6NgLGcOHscy6yLXpKCQi4Mz1yVa.jpg" alt="Star Wars">
-            </a>
-            <p>Star Wars</p>
-        </div>
-        <div class="films">
-            <a href="https://wwv.wookafr.org/streaming/aventure/jurassic-world-le-monde-dapres/">
-                <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/eVY9MIFVTcgWi2OzevfXuEjKlrR.jpg" alt="Jurassic Park">
-            </a>
-            <p>Jurassic world</p>
-        </div>
-        <div class="films">
-            <a href="https://wwv.wookafr.org/streaming/mystere/five-nights-at-freddys/">
-                <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/tEY81I7lpiHaLJa7AZ3O4vWXmJo.jpg" alt="FNAF">
-            </a>
-            <p>FNAF</p>
-        </div>
-        <div class="films">
-            <a href="https://wwv.wookafr.org/streaming/comedie/le-pantheon-de-la-joie/">
-                <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/o6QsZirma0yR08CyqDYouUhCW77.jpg" alt="Black Panther">
-            </a>
-            <p>Le panthéon de la joie</p>
-        </div>
-        <div class="films">
-            <a href="https://wwv.wookafr.org/streaming/comedie/alibi-com-2/">
-                <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/9gteYoeW0wOvYHnnvXJpq0RiGV8.jpg" alt="Alibi 2">
-            </a>
-            <p>Alibi 2</p>
-        </div>
-        <div class="films">
-            <a href="https://wwv.wookafr.org/streaming/musique/taylor-swift-the-eras-tour/">
-                <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/jf3YO8hOqGHCupsREf5qymYq1n.jpg" alt="Taylor Swift">
-            </a>
-            <p>Taylor Swift</p>
-        </div>
-        <div class="films">
-            <a href="https://wwv.wookafr.org/streaming/drame/le-jeune-imam/">
-                <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/pQU5vhv2AcDkm68b6djr8JpSDxG.jpg" alt="Le Jeune Imam">
-            </a>
-            <p>Le Jeune Imam</p>
-        </div>
-        <div class="films">
-            <a href="https://wwv.wookafr.org/streaming/drame/batiment-5/">
-                <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/q0b163rtX1qc0TVPkONel42yOJQ.jpg" alt="Bâtiment 5">
-            </a>
-            <p>Bâtiment 5</p>
-        </div>
-        <div class="films">
-            <a href="https://wwv.wookafr.org/streaming/series/south-park/">
-                <img src="https://wwv.wookafr.org/wp-content/uploads/2024/02/xJnbMTrJ2fl1AXAKx34U4BPvOhs.jpg" alt="South Park">
-            </a>
-            <p>South Park</p>
-        </div>
-        <div class="films">
-            <a href="https://wwv.wookafr.org/streaming/aventure/le-regne-animal/">
-                <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/1gO4SWCdMW0ptIRLQ455Ia5emC.jpg" alt="Le Règne Animal">
-            </a>
-            <p>Le Règne Animal</p>
-        </div>
-        <div class="films">
-            <a href="https://wwv.wookafr.org/streaming/comedie/ca-tourne-a-seoul-cobweb/">
-                <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/83pBAkmVctaHdeI1GE2LB2n5zu4.jpg" alt="Ça Tourne à Séoul">
-            </a>
-            <p>Ça Tourne à Séoul</p>
-        </div>
-        <div class="films">
-            <a href="https://wwv.wookafr.org/streaming/drame/creed-iii/">
-                <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/hYQs5RPHiWctoYqvI8baHiIqdd8.jpg" alt="CREED 3">
-            </a>
-            <p>CREED 3</p>
-        </div>
-        <div class="films">
-            <a href="https://wwv.wookafr.org/streaming/aventure/les-inseparables/">
-                <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/khdX89KDDGIhbxJuAGTmeo9bJZn.jpg" alt="Les Inséparables">
-            </a>
-            <p>Les Inséparables</p>
-        </div>
-        <div class="films">
-            <a href="https://wwv.wookafr.org/streaming/aventure/les-aventures-de-ricky/">
-                <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/6fblVw9BUvXmr62bvoMek8zKXEN.jpg" alt="Les Aventures de Rickis">
-            </a>
-            <p>Les Aventures de Rickis</p>
-        </div>
-        <div class="films">
-            <a href="https://wwv.wookafr.org/streaming/thriller/freestyle/">
-                <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/frvpF7wyXVxb78wp39c3bSSRslp.jpg" alt="Freestyle">
-            </a>
-            <p>Freestyle</p>
-        </div>
-        <div class="films">
-            <a href="https://wwv.wookafr.org/streaming/drame/banlieusards-2/">
-                <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/wxTzaXQudAnSTZgct3dPi2K8tt0.jpg" alt="Banlieusards 2">
-            </a>
-            <p>Banlieusards 2</p>
-        </div>
-        <div class="films">
-            <a href="https://wwv.wookafr.org/streaming/aventure/the-moon/">
-                <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/sZNwZv9YFMuChRxN5IdzcHqF5r.jpg" alt="The Moon">
-            </a>
-            <p>The Moon</p>
-        </div>
-        <div class="films">
-            <a href="https://wwv.wookafr.org/streaming/drame/ferrari/">
-                <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/xBFyJHvXCTgf9Vmq5uCnXRHrMQ4.jpg" alt="Ferrari">
-            </a>
-            <p>Ferrari</p>
-        </div>
-        <div class="films">
-            <a href="https://wwv.wookafr.org/streaming/comedie/10-jours-encore-sans-maman/">
-                <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/wy86JT2aVsIL1uuBKZp6Exz6pkH.jpg" alt="10 Jours Encore Sans Maman">
-            </a>
-            <p>10 Jours Encore Sans Maman</p>
-        </div>
-        <div class="films">
-            <a href="https://wwv.wookafr.org/streaming/familial/my-first-barbie-happy-dreamday/">
-                <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/zUGDo9luTIyiVfPVEmKGa55pIJa.jpg" alt="Barbie">
-            </a>
-            <p>Barbie</p>
-        </div>
-        <div class="films">
-            <a href="https://wwv.wookafr.org/streaming/familial/leo/">
-                <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/gSOVog7ydsaF1YpgAqBqnKYFGY.jpg" alt="Leo">
-            </a>
-            <p>Leo</p>
-        </div>
-        <div class="films">
-            <a href="https://wwv.wookafr.org/streaming/series/ma-famille-dabord/">
-                <img src="https://wwv.wookafr.org/wp-content/uploads/2024/04/9xIwhzgBoTejiN1zv9VRHUKkpBt.jpg">
-            </a>
-            <p> Ma famille d'abord</p>
-        </div>
-        
-        <div class="films">
-            <a href="https://wwv.wookafr.org/streaming/series/la-chronique-des-bridgerton/">
-                <img src="https://wwv.wookafr.org/wp-content/uploads/2024/02/hiEIKOkaP1PcWUeqjWeKr8eWF1Q.jpg" alt="Wall-e">
-            </a>
-            <p>La Chronique des Bridgerton</p>
-        </div>
-        <div class="films">
-            <a href="https://wwv.wookafr.org/streaming/series/lete-ou-je-suis-devenue-jolie/">
-                <img src="https://wwv.wookafr.org/wp-content/uploads/2023/12/1UjOeSZHunQqpSimmobGCWzkuXh.jpg" alt="Wall-e">
-            </a>
-            <p>L'été ou je suis devenue jolie</p>
-        </div>
-        <div class="films">
-            <a href="https://wwv.wookafr.org/streaming/comedie/a-travers-ma-fenetre-3-les-yeux-dans-les-yeux/">
-                <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/maJNyAG2WLHfoigbYZsGznK7KSM.jpg" alt="Wall-e">
-            </a>
-            <p>A travers ma fenêtre</p>
-        </div>
-        <div class="films">
-            <a href="https://wwv.wookafr.org/streaming/comedie/dans-5-ans/">
-                <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/2rtKG9U5EpEMfnUavxIg9Oy7pxe.jpg" alt="Wall-e">
-            </a>
-            <p>Dans 5 ans</p>
-        </div>
-        <div class="films">
-            <a href="https://wwv.wookafr.org/streaming/romance/fabricant-de-larmes/">
-                <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/7V86p8WeR9VrT32g7jpkJOiC43f.jpg" alt="Wall-e">
-            </a>
-            <p>Fabricant De Larmes</p>
-        </div>
-        <div class="films">
-            <a href="https://wwv.wookafr.org/streaming/series/modern-family/">
-                <img src="https://wwv.wookafr.org/wp-content/uploads/2024/06/klL4yhwiU8aF4AuF5dCfJA9sRnS.jpg" alt="Wall-e">
-            </a>
-            <p>Modern Familly</p>
-        </div>
-        <div class="films">
-            <a href="https://www.tokyvideo.com/fr/video/30-jours-max">
-                <img src="https://fr.web.img4.acsta.net/pictures/22/06/20/12/57/5321484.jpg" alt="Wall-e">
-            </a>
-            <p>Liaisons dangeureuses</p>
-        </div>
-        <div class="films">
-            <a href="https://www.tokyvideo.com/fr/video/30-jours-max">
-                <img src="https://images.justwatch.com/poster/243461957/s592/30-jours-max" alt="Wall-e">
-            </a>
-            <p>30 jours max</p>
-        </div>
-        <div class="films">
-            <a href="https://wwv.wookafr.org/streaming/series/mes-premieres-fois/">
-                <img src="https://wwv.wookafr.org/wp-content/uploads/2024/05/yPYqq80Sq7nFOtyTc3PT6o983kG.jpg" alt="Wall-e">
-            </a>
-            <p>Mes premières fois</p>
-        </div>
-        <div class="films">
-            <a href="https://wwv.wookafr.org/streaming/series/outer-banks/">
-                <img src="https://wwv.wookafr.org/wp-content/uploads/2024/05/ovDgO2LPfwdVRfvScAqo9aMiIW.jpg" alt="Wall-e">
-            </a>
-            <p>Outher Banks</p>
-        </div>
-        <div class="films">
-            <a href="https://wwv.wookafr.org/streaming/aventure/transformers-rise-of-the-beasts/">
-                <img src="https://fr.web.img2.acsta.net/pictures/23/04/27/15/59/2127095.jpg" alt="Wall-e">
-            </a>
-            <p>Les Transformers</p>
-        </div>
-        <div class="films">
-            <a href="https://wwv.wookafr.org/streaming/mystere/smile-cetait-ecrit/">
-                <img src="https://fr.web.img2.acsta.net/pictures/22/09/29/08/42/5363876.jpg" alt="Wall-e">
-            </a>
-            <p>Smile</p>
-        </div>
-        <div class="films">
-            <a href="https://wwv.wookafr.org/streaming/thriller/sous-la-seine/">
-                <img src="https://fr.web.img6.acsta.net/img/63/9a/639a5ebe313496018137c91152b1b914.jpg" alt="Parasite">
-            </a>
-            <p>Sous la seine</p>
-        </div>
-        <div class="films">
-            <a href="https://wwv.wookafr.org/streaming/episodes/squeezie-merci-internet-saison-1-episode-1/">
-                <img src="https://wwv.wookafr.org/wp-content/uploads/2024/02/3xnUUWDVml9vDUtxci3pxbfWfep.jpg" alt="Interstellar">
-            </a>
-            <p>Squeezie : Merci Internet</p>
-        </div>
-        <div class="films">
-            <a href="https://wwv.wookafr.org/streaming/comedie/la-la-land/">
-                <img src="https://fr.web.img4.acsta.net/pictures/16/11/10/13/52/169386.jpg" alt="La La Land">
-            </a>
-            <p>La La Land</p>
-        </div>
-        <div class="films">
-            <a href="https://wwv.wookafr.org/streaming/aventure/fast-furious-9/">
-                <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/5Ww3aXmfmcFPDIbuTX3gQbtueoG.jpg" alt="Forrest Gump">
-            </a>
-            <p>Fst and furious</p>
-        </div>
-        <div class="films">
-            <a href="https://wwv.wookafr.org/streaming/familial/le-retour-des-thunderman/">
-                <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/p4HOnQETJNCrSAQvvjvx6rGAHeV.jpg" alt="Amélie">
-            </a>
-            <p> Le Retour Des Thunderman</p>
-        </div>
-        <div class="films">
-            <a href="https://wwv.wookafr.org/streaming/romance/a-contre-sens/">
-                <img src="https://fr.web.img2.acsta.net/pictures/23/04/05/17/17/4725967.jpg" alt="Wall-e">
-            </a>
-            <p>A Contre Sens</p>
-        </div>
-        <div class="films">
-            <a href="https://ok.ru/video/948520159851">
-                <img src="https://cinemasdaujourdhui.com/wp-content/uploads/2021/05/w7JcXBC2azUOvcxPJXSb4PYk1jX-scaled.jpg" alt="Wall-e">
-            </a>
-            <p>Bienvenue à Gatacca</p>
-        </div>
-        <div class="films">
-            <a href="https://www.tokyvideo.com/fr/video/oppenheimer-vf">
-                <img src="https://i.ebayimg.com/images/g/EZAAAOSwc7Rke23F/s-l1200.webp" alt="Wall-e">
-            </a>
-            <p>Openheimer</p>
-        </div>
-        <div class="films">
-            <a href="https://www.dailymotion.com/video/x7sbopk">
-                <img src="https://fr.web.img2.acsta.net/pictures/19/12/24/11/26/5091620.jpg" alt="Wall-e">
-            </a>
-            <p>10 jours sans maman</p>
-        </div>
-        <div class="films">
-            <a href="https://www.tokyvideo.com/fr/video/bad-boy-wawacity-ec">
-                <img src="https://fr.web.img6.acsta.net/pictures/19/11/22/09/44/3027567.jpg" alt="Wall-e">
-            </a>
-            <p>Bad boy</p>
-        </div>
-        <div class="films">
-            <a href="https://www.tokyvideo.com/fr/video/le-diner-de-cons-1998">
-                <img src="https://fr.web.img6.acsta.net/medias/nmedia/18/36/10/96/19649758.jpg" alt="Wall-e">
-            </a>
-            <p>Le diner de cons</p>
-        </div>
-        <div class="films">
-            <a href="https://www.tokyvideo.com/fr/video/la-grande-vadrouille">
-                <img src="https://fr.web.img5.acsta.net/pictures/16/06/16/12/01/072037.jpg" alt="Wall-e">
-            </a>
-            <p>La grande vadrouille</p>
-        </div>
-        <div class="films premium">
-            <a href="https://www.tokyvideo.com/video/drive-2011-fr" class="film-link" data-url="https://www.tokyvideo.com/video/drive-2011-fr">
-                <img src="https://nightofthelivingtrev.wordpress.com/wp-content/uploads/2011/12/drive-poster.jpg" alt="Drive">
-                <img src="premium.png" alt="Premium" class="premium-icon">
-            </a>
-            <p>Drive</p>
-            <a href="abonnement.html">Acheter l'abonnement</a>
-        </div>
-        <div class="films">
-            <a href="https://www.tokyvideo.com/fr/video/l-aile-ou-la-cuisse-de-funes-1h41-avi">
-                <img src="https://fr.web.img4.acsta.net/medias/nmedia/18/36/37/32/18478100.jpg" alt="Wall-e">
-            </a>
-            <p>L'aile ou la cuisse</p>
-        </div>
-        <div class="films">
-            <a href="https://wwv.wookafr.org/streaming/aventure/le-royaume-des-chats/">
-                <img src="https://m.media-amazon.com/images/I/81fEIMzIzwS._AC_UF1000,1000_QL80_.jpg" alt="Wall-e">
-            </a>
-            <p>Le royaume des chats</p>
-        </div>
-        <div class="films">
-            <a href="https://www.tokyvideo.com/fr/video/le-grand-bleu-vf">
-                <img src="https://medias.boutique.lab.arte.tv/prod/76145_vod_thumb_362973-hd@2x.jpg" alt="Wall-e">
-            </a>
-            <p>Le grand bleu</p>
-        </div>
-        <div class="films">
-            <a href="https://www.tokyvideo.com/fr/video/la-ligne-verte-vf">
-                <img src="https://fr.web.img4.acsta.net/medias/nmedia/18/66/15/78/19254683.jpg" alt="Wall-e">
-            </a>
-            <p>La ligne verte</p>
-        </div>
-        <div class="films">
-            <a href="https://www.tokyvideo.com/fr/video/le-parrain-vf">
-                <img src="https://fusion.molotov.tv/arts/i/446x588/Ch8SHQoUMnDPjiXNZwINrcvQ30-kZUjYI1ASA2pwZxgB/jpg" alt="Wall-e">
-            </a>
-            <p>Le parrain</p>
-        </div>
-        <div class="films">
-            <a href="https://www.tokyvideo.com/fr/video/veuillez-nous-excuser-pour-la-gene-occasionnee-vf">
-                <img src="https://images.justwatch.com/poster/305939182/s718/veuillez-nous-excuser-pour-la-gene-occasionnee.jpg" alt="Wall-e">
-            </a>
-            <p>Veuillez nous excuser pour la gène occasionée</p>
-        </div>
-        <div class="films">
-            <a href="https://films.wookafr.org/streaming/episodes/mercredi-saison-1-episode-1/">
-                <img src="https://poster-manga.fr/3370-large_default/poster-wednesday-addams-affiche-ou-cadre.jpg" alt="Wall-e">
-            </a>
-            <p>Mercredi Adams</p>
-        </div>
-        <div class="films">
-            <a href="baby sitting.html">
-                <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/3808DYuvuLQWutJPX2KwuB7sxnn.jpg" alt="Wall-e">
-            </a>
-            <p>Baby sitting</p>
-        </div>
-        <div class="films">
-            <a href="https://www.justwatch.com/fr/serie/mh370-lavion-disparu">
-                <img src="https://images.justwatch.com/poster/303966091/s332/saison-1" alt="Wall-e">
-            </a>
-            <p>MH370 L'avion disparue</p>
-        </div>
-        <div class="films">
-            <a href="https://films.wookafr.org/streaming/familial/bienvenue-chez-les-casagrandes-le-film/">
-                <img src="https://fr.web.img2.acsta.net/pictures/19/10/04/06/20/5907293.jpg" alt="Wall-e">
-            </a>
-            <p>Bienvenue chez les Casagrandes</p>
-        </div>
-        <div class="films">
-            <a href="https://films.wookafr.org/streaming/fantastique/elementaire/">
-                <img src="https://fr.web.img2.acsta.net/pictures/23/06/07/14/09/5709179.jpg" alt="Wall-e">
-            </a>
-            <p>Elemantaire</p>
-        </div>
-        <div class="films">
-            <a href="https://films.wookafr.org/streaming/fantastique/le-sens-de-la-famille/">
-                <img src="https://fr.web.img6.acsta.net/pictures/21/03/26/10/00/0733728.jpg" alt="Wall-e">
-            </a>
-            <p>Le sens de la famille</p>
-        </div>
-        <div class="films">
-            <a href="les croods.html">
-                <img src="https://fr.web.img4.acsta.net/medias/nmedia/18/95/10/55/20502139.jpg" alt="Wall-e">
-            </a>
-            <p>Les croods</p>
-        </div>
-        <div class="films">
-            <a href="https://films.wookafr.org/streaming/drame/bob-marley-one-love/">
-                <img src="https://m.media-amazon.com/images/M/MV5BY2U4M2NmY2ItMjAyNC00NzM1LTg3ZTEtNzVlYjEzNTE5NDI5XkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_.jpg" alt="Wall-e">
-            </a>
-            <p>Bob marley one love</p>
-        </div>
-    
-
-    <!-- Ajoutez d'autres films ici de manière similaire -->
-
-    <script>
-        const correctCode = "anp23HGB3ghl08Hgdjshjhdsds";
-
-        document.querySelectorAll('.film-link').forEach(link => {
-            link.addEventListener('click', function(event) {
-                event.preventDefault();
-                const userCode = prompt("Veuillez entrer le code premium :");
-
-                if (userCode === correctCode) {
-                    window.location.href = this.getAttribute('data-url');
-                } else {
-                    alert("Code incorrect. Veuillez réessayer.");
-                }
-            });
-        });
-
-        function search() {
-            var input, filter, divs, a, txtValue;
-            input = document.getElementById('searchInput');
-            filter = input.value.toUpperCase();
-            divs = document.getElementsByTagName('div');
-
-            for (var i = 0; i < divs.length; i++) {
-                a = divs[i].getElementsByTagName('a')[0];
-                txtValue = a.getAttribute('href');
-
-                if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                    divs[i].style.display = '';
-                } else {
-                    divs[i].style.display = 'none';
-                }
-            }
-        }
-    </script>
+              if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                  divs[i].style.display = '';
+              } else {
+                  divs[i].style.display = 'none';
+              }
+          }
+      }
+  </script>
 
 
 
